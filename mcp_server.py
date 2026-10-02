@@ -92,20 +92,31 @@ def ficha_dataset(nombre: str) -> dict:
 # dejar que cada usuario improvise su propia pregunta de interpretación.
 # ---------------------------------------------------------------------------
 
-# TODO 5 — prompt "interpretar_componentes"
-#   Decorador:   @mcp.prompt(name="interpretar_componentes", description="...")
-#   Función:     interpretar_componentes(nombre: str = Field(...),
-#                                         n_componentes: int = Field(...)
-#                                         ) -> list[UserMessage]
-#   Cuerpo:      construir un f-string "prompt" que le pida a Claude, sobre el
-#                resultado de ejecutar_pca:
-#                  1. identificar las 2-3 variables con mayor carga por componente
-#                  2. explicar qué patrón de dominio podría representar cada una
-#                  3. indicar si el signo de la carga tiene una lectura razonable
-#                y terminar preguntando si n_componentes alcanza según la
-#                varianza acumulada.
-#   Devolver:    return [UserMessage(prompt)]
-#   Ver el texto exacto sugerido en la diapositiva 12.
+@mcp.prompt(
+    name="interpretar_componentes",
+    description=(
+        "Plantilla para interpretar, en términos del dominio y no solo de "
+        "varianza, los componentes principales de un dataset."
+    ),
+)
+def interpretar_componentes(
+    nombre: str = Field(description="Nombre del dataset sin extensión, p. ej. 'iris' o 'wine'"),
+    n_componentes: int = Field(description="Número de componentes principales a interpretar"),
+) -> list[UserMessage]:
+    prompt = f"""
+Ejecuta PCA sobre el dataset '{nombre}' con {n_componentes} componentes usando
+la tool ejecutar_pca y, con el resultado, interpreta cada componente:
+
+1. Identifica las 2-3 variables con mayor carga (en valor absoluto) en cada componente.
+2. Explica qué patrón del dominio de '{nombre}' podría representar cada componente
+   a partir de esas variables, no solo cuánta varianza captura.
+3. Indica si el signo de las cargas tiene una lectura razonable (p. ej. variables
+   que se oponen entre sí dentro del mismo componente).
+
+Termina diciendo si {n_componentes} componentes alcanzan según la varianza
+acumulada, o si convendría usar más o menos.
+"""
+    return [UserMessage(prompt)]
 
 
 if __name__ == "__main__":
