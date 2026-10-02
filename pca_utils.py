@@ -24,12 +24,13 @@ def listar_datasets() -> list[str]:
 
 
 def _ruta_dataset(nombre: str) -> Path:
-    ruta = DATASETS_DIR / f"{nombre}.csv"
-    if not ruta.exists():
+    # Lista blanca: solo nombres que sean exactamente un CSV de datasets/.
+    # Evita que "../otro" o rutas absolutas salgan de la carpeta.
+    if nombre not in listar_datasets():
         raise ValueError(
             f"No existe el dataset '{nombre}'. Disponibles: {listar_datasets()}"
         )
-    return ruta
+    return DATASETS_DIR / f"{nombre}.csv"
 
 
 def describir_dataset(nombre: str) -> dict:
