@@ -39,12 +39,19 @@ mcp = MCPServer("analisis-datos")
 # elige según lo que pida quien está conversando.
 # ---------------------------------------------------------------------------
 
-# TODO 1 — tool "cargar_dataset"
-#   Decorador:   @mcp.tool(name="cargar_dataset", description="...")
-#   Función:     cargar_dataset(nombre: str = Field(...)) -> dict
-#   Cuerpo:      return pca_utils.describir_dataset(nombre)
-#   La descripción debe explicar que esta tool se usa ANTES de ejecutar_pca,
-#   para que Claude sepa qué columnas numéricas tiene el dataset.
+@mcp.tool(
+    name="cargar_dataset",
+    description=(
+        "Carga un dataset de la carpeta datasets/ y devuelve su forma (filas), "
+        "sus columnas numéricas y sus columnas categóricas. Úsala SIEMPRE ANTES "
+        "de ejecutar_pca, para saber qué columnas numéricas tiene el dataset y "
+        "cuántos componentes máximos se pueden pedir."
+    ),
+)
+def cargar_dataset(
+    nombre: str = Field(description="Nombre del dataset sin extensión, p. ej. 'iris' o 'wine'"),
+) -> dict:
+    return pca_utils.describir_dataset(nombre)
 
 
 # TODO 2 — tool "ejecutar_pca"
