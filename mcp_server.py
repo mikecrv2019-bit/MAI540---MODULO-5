@@ -54,13 +54,22 @@ def cargar_dataset(
     return pca_utils.describir_dataset(nombre)
 
 
-# TODO 2 — tool "ejecutar_pca"
-#   Decorador:   @mcp.tool(name="ejecutar_pca", description="...")
-#   Función:     ejecutar_pca(nombre: str = Field(...),
-#                              n_componentes: int = Field(...)) -> dict
-#   Cuerpo:      return pca_utils.ejecutar_pca(nombre, n_componentes)
-#   La descripción debe mencionar que devuelve varianza explicada, varianza
-#   acumulada y las cargas (loadings) de cada variable original.
+@mcp.tool(
+    name="ejecutar_pca",
+    description=(
+        "Ejecuta PCA (con estandarización previa) sobre las columnas numéricas "
+        "de un dataset. Devuelve la varianza explicada por componente, la "
+        "varianza acumulada y las cargas (loadings) de cada variable original "
+        "en cada componente. Usa cargar_dataset antes para conocer las columnas."
+    ),
+)
+def ejecutar_pca(
+    nombre: str = Field(description="Nombre del dataset sin extensión, p. ej. 'iris' o 'wine'"),
+    n_componentes: int = Field(
+        description="Número de componentes principales a extraer (entre 1 y el número de columnas numéricas)"
+    ),
+) -> dict:
+    return pca_utils.ejecutar_pca(nombre, n_componentes)
 
 
 # ---------------------------------------------------------------------------
