@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 .venv/
+# Archivos de bloqueo temporales de Word
+~$*
