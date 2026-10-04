@@ -1,0 +1,47 @@
+{
+  "k_elegido": 3,
+  "silueta": 0.2849,
+  "inercia": 1277.9285,
+  "tamano_por_grupo": {
+    "0": 65,
+    "1": 51,
+    "2": 62
+  },
+  "pca_varianza_por_componente": [
+    0.362,
+    0.1921
+  ],
+  "pca_varianza_acumulada_2pc": 0.5541,
+  "cargas_PC1_PC2": {
+    "PC1": {
+      "alcohol": 0.1443,
+      "malic_acid": -0.2452,
+      "ash": -0.0021,
+      "alcalinity_of_ash": -0.2393,
+      "magnesium": 0.142,
+      "total_phenols": 0.3947,
+      "flavanoids": 0.4229,
+      "nonflavanoid_phenols": -0.2985,
+      "proanthocyanins": 0.3134,
+      "color_intensity": -0.0886,
+      "hue": 0.2967,
+      "od280/od315_of_diluted_wines": 0.3762,
+      "proline": 0.2868
+    },
+    "PC2": {
+      "alcohol": 0.4837,
+      "malic_acid": 0.2249,
+      "ash": 0.3161,
+      "alcalinity_of_ash": -0.0106,
+      "magnesium": 0.2996,
+      "total_phenols": 0.065,
+      "flavanoids": -0.0034,
+      "nonflavanoid_phenols": 0.0288,
+      "proanthocyanins": 0.0393,
+      "color_intensity": 0.53,
+      "hue": -0.2792,
+      "od280/od315_of_diluted_wines": -0.1645,
+      "proline": 0.3649
+    }
+  }
+}

@@ -29,6 +29,7 @@ a mano antes de conectarlo a nada más.
 from mcp.server.mcpserver import MCPServer, UserMessage
 from pydantic import Field
 
+import kmeans_utils
 import pca_utils
 
 mcp = MCPServer("analisis-datos")
@@ -70,6 +71,22 @@ def ejecutar_pca(
     ),
 ) -> dict:
     return pca_utils.ejecutar_pca(nombre, n_componentes)
+
+
+@mcp.tool(
+    name="segmentar_kmeans",
+    description=(
+        "Segmenta un dataset con K-Means (con estandarización previa) sobre sus "
+        "columnas numéricas. Devuelve la etiqueta de grupo de cada fila, el "
+        "tamaño de cada grupo, la inercia y el coeficiente de silueta del k "
+        "elegido. Usa cargar_dataset antes para conocer las columnas."
+    ),
+)
+def segmentar_kmeans(
+    nombre: str = Field(description="Nombre del dataset sin extensión, p. ej. 'iris' o 'wine'"),
+    k: int = Field(description="Número de grupos (entero >= 2 y menor que el número de filas)"),
+) -> dict:
+    return kmeans_utils.ejecutar_kmeans(nombre, k)
 
 
 # ---------------------------------------------------------------------------
