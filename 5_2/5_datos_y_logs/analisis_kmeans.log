@@ -1,0 +1,54 @@
+ k   inercia  silueta  caida_inercia
+ 2 1658.7589   0.2593            NaN
+ 3 1277.9285   0.2849       380.8304
+ 4 1175.4283   0.2602       102.5002
+ 5 1109.5127   0.2016        65.9156
+ 6 1046.0023   0.2372        63.5104
+ 7  981.5952   0.2036        64.4071
+ 8  935.2012   0.1570        46.3940
+ 9  889.8929   0.1499        45.3083
+10  845.8952   0.1436        43.9977
+
+k con mayor silueta: 3
+
+Perfil (medias originales):
+ grupo                              0       1        2
+n                              65.00   51.00    62.00
+alcohol                        12.25   13.13    13.68
+malic_acid                      1.90    3.31     2.00
+ash                             2.23    2.42     2.47
+alcalinity_of_ash              20.06   21.24    17.46
+magnesium                      92.74   98.67   107.97
+total_phenols                   2.25    1.68     2.85
+flavanoids                      2.05    0.82     3.00
+nonflavanoid_phenols            0.36    0.45     0.29
+proanthocyanins                 1.62    1.15     1.92
+color_intensity                 2.97    7.23     5.45
+hue                             1.06    0.69     1.07
+od280/od315_of_diluted_wines    2.80    1.70     3.16
+proline                       510.17  619.06  1100.23
+
+Perfil (desviaciones estándar vs. media global):
+ grupo                            0     1     2
+alcohol                      -0.93  0.16  0.84
+malic_acid                   -0.39  0.87 -0.30
+ash                          -0.49  0.19  0.36
+alcalinity_of_ash             0.17  0.52 -0.61
+magnesium                    -0.49 -0.08  0.58
+total_phenols                -0.08 -0.98  0.89
+flavanoids                    0.02 -1.22  0.98
+nonflavanoid_phenols         -0.03  0.73 -0.56
+proanthocyanins               0.06 -0.78  0.58
+color_intensity              -0.90  0.94  0.17
+hue                           0.46 -1.16  0.47
+od280/od315_of_diluted_wines  0.27 -1.29  0.78
+proline                      -0.75 -0.41  1.13
+
+Grupo vs. cultivar real:
+ cultivar  class_0  class_1  class_2
+grupo                              
+0               0       65        0
+1               0        3       48
+2              59        3        0
+
+Varianza PCA 2 componentes: [0.362, 0.1921] acum: 0.5541

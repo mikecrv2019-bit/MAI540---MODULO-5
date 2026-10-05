@@ -1,0 +1,58 @@
+List Tools: ['cargar_dataset', 'ejecutar_pca', 'segmentar_kmeans']
+
+=== segmentar_kmeans('wine', k=3) isError=False ===
+{
+  "dataset": "wine",
+  "filas_usadas": 178,
+  "variables_usadas": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "total_phenols",
+    "flavanoids",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280/od315_of_diluted_wines",
+    "proline"
+  ],
+  "k": 3,
+  "etiquetas": "<178 etiquetas; primeras 10: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]>",
+  "tamano_por_grupo": {
+    "0": 65,
+    "1": 51,
+    "2": 62
+  },
+  "inercia": 1277.9285,
+  "silueta": 0.2849
+}
+
+=== segmentar_kmeans('iris', k=3) isError=False ===
+{
+  "dataset": "iris",
+  "filas_usadas": 150,
+  "variables_usadas": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "k": 3,
+  "etiquetas": "<150 etiquetas; primeras 10: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]>",
+  "tamano_por_grupo": {
+    "0": 53,
+    "1": 50,
+    "2": 47
+  },
+  "inercia": 139.8205,
+  "silueta": 0.4599
+}
+
+##### Casos de error #####
+segmentar_kmeans('wine', k=1) isError=True
+segmentar_kmeans('wine', k=178) isError=True
+segmentar_kmeans('no_existe', k=3) isError=True
+segmentar_kmeans('../pca_utils', k=3) isError=True
