@@ -1,6 +1,6 @@
 """
 Verifica por stdio (mismo protocolo que el MCP Inspector) la tool segmentar_kmeans.
-Guarda el resultado en evidencia/verificacion_kmeans.log.
+Guarda el resultado en Tarea_5_2/2_evidencia_inspector/verificacion_kmeans.log.
 
     python verificar_kmeans.py
 """
@@ -13,8 +13,9 @@ from pathlib import Path
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-AQUI = Path(__file__).parent
-LOG = AQUI / "evidencia" / "verificacion_kmeans.log"
+# Vive en Tarea_5_2/1_codigo; el servidor está en la raíz del repositorio.
+AQUI = Path(__file__).resolve().parents[2]
+LOG = AQUI / "Tarea_5_2" / "2_evidencia_inspector" / "verificacion_kmeans.log"
 lineas: list[str] = []
 
 
@@ -45,6 +46,7 @@ async def main():
                 r = await s.call_tool("segmentar_kmeans", {"nombre": nombre, "k": k})
                 salida(f"segmentar_kmeans({nombre!r}, k={k}) isError={r.is_error}")
 
+    LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_text("\n".join(lineas), encoding="utf-8")
 
 

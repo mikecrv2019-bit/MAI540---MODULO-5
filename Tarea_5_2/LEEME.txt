@@ -1,10 +1,17 @@
 Tarea 5.2 - K-Means sobre el servidor MCP (dataset wine, k = 3)
 
-1_codigo/               kmeans_utils.py, mcp_server.py (tool segmentar_kmeans) y scripts de apoyo
-2_evidencia_inspector/  captura del MCP Inspector y log de verificacion
-3_graficos/             codo + silueta, y PCA 2D coloreado por grupo
-4_documentos/           interpretacion de grupos (media pagina) y propuesta de capstone (PDF)
-5_datos_y_logs/         tablas y resultados numericos
+En la raiz del repositorio (el servidor, que necesita pca_utils.py y datasets/):
+  kmeans_utils.py   logica de K-Means (cargar_y_escalar, ejecutar_kmeans)
+  mcp_server.py     servidor MCP con la tool segmentar_kmeans
 
-Esta carpeta es una copia para visualizar. El codigo que se ejecuta esta en la
-carpeta principal Demo_PCA_MCP_incompleto (necesita pca_utils.py y datasets/).
+En esta carpeta (cada archivo existe una sola vez):
+  1_codigo/               scripts: verificar_kmeans.py, analisis_kmeans.py, generar_entregables.py
+  2_evidencia_inspector/  captura del MCP Inspector y log de verificacion
+  3_graficos/             codo + silueta, y PCA 2D coloreado por grupo
+  4_documentos/           interpretacion de grupos (media pagina) y propuesta de capstone (PDF)
+  5_datos_y_logs/         tablas y resultados numericos
+
+Ejecucion (desde cualquier carpeta):
+  python Tarea_5_2/1_codigo/verificar_kmeans.py
+  python Tarea_5_2/1_codigo/analisis_kmeans.py
+  python Tarea_5_2/1_codigo/generar_entregables.py

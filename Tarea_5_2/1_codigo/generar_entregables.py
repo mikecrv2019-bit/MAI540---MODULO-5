@@ -1,5 +1,5 @@
 """
-Genera los dos PDF de la tarea K-Means a partir de evidencia/:
+Genera los dos PDF de la tarea K-Means a partir de Tarea_5_2/5_datos_y_logs/ y los guarda en Tarea_5_2/4_documentos/:
   - Interpretacion_Grupos.pdf (media página)
   - Propuesta_Capstone_Dilitio_Wine_Corp.pdf (una página)
 
@@ -14,8 +14,10 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
-AQUI = Path(__file__).parent
-EV = AQUI / "evidencia"
+TAREA = Path(__file__).resolve().parents[1]
+EV = TAREA / "5_datos_y_logs"
+SALIDA = TAREA / "4_documentos"
+SALIDA.mkdir(exist_ok=True)
 perfil = pd.read_csv(EV / "perfil_grupos.csv", index_col="grupo")
 zper = pd.read_csv(EV / "perfil_grupos_z.csv", index_col="grupo")
 
@@ -26,7 +28,7 @@ NOTA = ParagraphStyle("n", parent=CUERPO, fontName="Times-Italic", fontSize=10)
 
 
 def pdf(nombre, elementos):
-    doc = SimpleDocTemplate(str(AQUI / nombre), pagesize=letter, leftMargin=inch, rightMargin=inch,
+    doc = SimpleDocTemplate(str(SALIDA / nombre), pagesize=letter, leftMargin=inch, rightMargin=inch,
                             topMargin=0.8 * inch, bottomMargin=0.8 * inch)
     doc.build(elementos)
 
