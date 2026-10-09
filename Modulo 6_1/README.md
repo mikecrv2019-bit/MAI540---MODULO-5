@@ -25,3 +25,19 @@ python src/reproducir.py
 
 Semillas documentadas: validación cruzada `StratifiedKFold(n_splits=5, shuffle=True, random_state=42)`;
 modelos con `random_state=42`; partición única 75/25 con semillas 0 a 29 (`random_state`).
+
+## Resultados (generados desde `evidencia/02_ingeniero_modelos/metricas.json`)
+
+| Modelo | Exactitud CV (M ± DE) | Malos detectados CV (M ± DE) | Exactitud 75/25, 30 semillas (mín–máx) |
+|---|---|---|---|
+| Árbol de decisión | .698 ± .019 | .530 ± .046 | .608–.720 |
+| Random Forest | .759 ± .007 | .377 ± .019 | .712–.804 |
+
+Línea base «siempre bueno» = .700. Detalle completo en `evidencia/02_ingeniero_modelos/metricas.md`.
+
+## Entregables
+
+- Informe APA: `informe/Informe_Tarea_6_1.docx` (se regenera con `python informe/generar_informe.py`).
+- Evidencia por rol: `evidencia/01_analista_datos/`, `evidencia/02_ingeniero_modelos/`, `evidencia/03_auditor/`.
+- Nota: el subagente auditor no pudo escribir su reporte por una restricción de la herramienta; `reporte_auditor.md`
+  es la transcripción de su mensaje final (indicado en el propio archivo). `verificar.py` y su salida sí son del auditor.
