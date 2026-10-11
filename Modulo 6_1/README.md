@@ -19,6 +19,7 @@ Analista de datos ──► Ingeniero de modelos ──► Auditor
 ## Reproducir desde cero
 
 ```bash
+cd "Modulo 6_1"     # esta carpeta dentro del repositorio MAI540---MODULO-5
 pip install -r requirements.txt
 python src/reproducir.py
 ```
