@@ -1,0 +1,68 @@
+=== 1. Resumen de datos vs CSV ===
+[OK ] 1.1 forma X = [1000, 20] :: (1000, 20)
+[OK ] 1.2 clase good/bad = 700/300
+[OK ] 1.3 valores de clase solo {good,bad}
+[OK ] 1.4 faltantes = 0 (con lectura que solo trata '' como NA)
+[OK ] 1.5 ninguna celda vacia en el CSV crudo :: 1001 lineas
+[OK ] 1.6 duplicados en X = 0 y X+clase = 0
+[OK ] 1.7 X identico con clase distinta = 0
+[OK ] 1.8 13 categoricas y 7 numericas, listas iguales
+[OK ] 1.9 columnas numericas son int64
+[OK ] 1.10 cardinalidades, conteos y tasa_bad por categoria coinciden
+[OK ] 1.11 estadisticos numericos (min/max/media/mediana/desv/asimetria/unicos/atipicos IQR) coinciden
+[OK ] 1.12 'none' literal conservado como categoria (no NaN): conteos 907/814/596
+[OK ] 1.13 'purpose' retraining = 9 filas
+[OK ] 1.14 resumen .md consistente con .json (1000 filas, 70.0%/30.0%, 0.7000)
+
+=== 2. Inspeccion de objetos Pipeline reales (src/modelos.py) ===
+[OK ] 2.1 modelos: DecisionTreeClassifier y RandomForestClassifier
+[OK ] 2.2 hiperparametros = defaults salvo random_state=42 :: RF n_estimators=100, arbol max_depth=None
+[OK ] 2.3 [arbol] Pipeline(prep=ColumnTransformer[OrdinalEncoder en 13 cat, passthrough 7 num], modelo) :: steps=['prep', 'modelo'], handle_unknown=use_encoded_value, unknown_value=-1
+[OK ] 2.4 [arbol] el pipeline NO esta ajustado antes de la validacion
+[OK ] 2.3 [random_forest] Pipeline(prep=ColumnTransformer[OrdinalEncoder en 13 cat, passthrough 7 num], modelo) :: steps=['prep', 'modelo'], handle_unknown=use_encoded_value, unknown_value=-1
+[OK ] 2.4 [random_forest] el pipeline NO esta ajustado antes de la validacion
+[OK ] 2.5 [arbol] categories_ del OrdinalEncoder == categorias del entrenamiento de cada pliegue (5/5) :: n_train por pliegue=[800, 800, 800, 800, 800]
+[OK ] 2.6 [arbol] el modelo se ajusta con 800 filas de entrenamiento por pliegue
+[OK ] 2.5 [random_forest] categories_ del OrdinalEncoder == categorias del entrenamiento de cada pliegue (5/5) :: n_train por pliegue=[800, 800, 800, 800, 800]
+[OK ] 2.6 [random_forest] el modelo recibe 20 columnas codificadas
+[OK ] 2.7 categoria ausente en entrenamiento ('retraining') no aparece en categories_ y se codifica -1 :: codigos de test=[-1.0, -1.0, -1.0]
+[OK ] 2.8 contraste: ajuste global SI incluiria 'retraining' (el pipeline del ingeniero no lo hace)
+
+=== 3. Validacion cruzada estratificada (recalculo propio) ===
+[OK ] 3.1 StratifiedKFold(5, shuffle=True, random_state=42): 5 pliegues, test disjuntos y cubren 1000
+[OK ] 3.2 cada pliegue test tiene 60 'bad' de 200 (30%), estratificado :: bad por pliegue=[60, 60, 60, 60, 60]
+[OK ] 3.3 ningun indice comun entre train y test en cada pliegue
+[OK ] 3.4 [arbol] exactitud por pliegue (mi pipeline) == metricas.json (exacto) :: [0.71, 0.71, 0.665, 0.705, 0.7]
+[OK ] 3.5 [arbol] recall bad por pliegue (mi pipeline, positivo=bad) == metricas.json (exacto) :: [0.5333, 0.5667, 0.45, 0.55, 0.55]
+[OK ] 3.6 [arbol] pipeline del ingeniero con mi bucle == mi pipeline
+[OK ] 3.7 [arbol] media/desv (ddof=1) de exactitud y recall == metricas.json :: exactitud 0.6980 +/- 0.0189 | recall bad 0.5300 +/- 0.0462 | (ddof=0: 0.0169, 0.0414)
+[OK ] 3.8 [arbol] recall agregado fuera de pliegue == reportado :: 0.5300
+[OK ] 3.9 [arbol] el recall reportado NO es el de 'good' (positivo correcto = bad) :: recall good agregado=0.7700
+[OK ] 3.4 [random_forest] exactitud por pliegue (mi pipeline) == metricas.json (exacto) :: [0.765, 0.765, 0.75, 0.76, 0.755]
+[OK ] 3.5 [random_forest] recall bad por pliegue (mi pipeline, positivo=bad) == metricas.json (exacto) :: [0.3667, 0.3833, 0.4, 0.3833, 0.35]
+[OK ] 3.6 [random_forest] pipeline del ingeniero con mi bucle == mi pipeline
+[OK ] 3.7 [random_forest] media/desv (ddof=1) de exactitud y recall == metricas.json :: exactitud 0.7590 +/- 0.0065 | recall bad 0.3767 +/- 0.0190 | (ddof=0: 0.0058, 0.0170)
+[OK ] 3.8 [random_forest] recall agregado fuera de pliegue == reportado :: 0.3767
+[OK ] 3.9 [random_forest] el recall reportado NO es el de 'good' (positivo correcto = bad) :: recall good agregado=0.9229
+[OK ] 3.10 linea base 'siempre bueno' = 0.70 calculada
+
+=== 4. Particion unica 75/25, semillas 0..29 (recalculo propio) ===
+[OK ] 4.1 [arbol] 30 pares (exactitud, recall bad) por semilla == metricas.json (exacto)
+[OK ] 4.2 [arbol] semillas_0_29: estadisticos y diferencias vs media CV (exactitud y recall) == metricas.json :: exact. media=0.6808 dif=-1.72pp rango=[-9.00,+2.20]pp | recall media=0.4844 dif=-4.56pp rango=[-18.33,+12.33]pp
+[OK ] 4.2 [arbol] semillas_0_9: estadisticos y diferencias vs media CV (exactitud y recall) == metricas.json :: exact. media=0.6744 dif=-2.36pp rango=[-9.00,+2.20]pp | recall media=0.5093 dif=-2.07pp rango=[-17.00,+12.33]pp
+[OK ] 4.1 [random_forest] 30 pares (exactitud, recall bad) por semilla == metricas.json (exacto)
+[OK ] 4.2 [random_forest] semillas_0_29: estadisticos y diferencias vs media CV (exactitud y recall) == metricas.json :: exact. media=0.7516 dif=-0.74pp rango=[-4.70,+4.50]pp | recall media=0.3769 dif=+0.02pp rango=[-9.67,+13.00]pp
+[OK ] 4.2 [random_forest] semillas_0_9: estadisticos y diferencias vs media CV (exactitud y recall) == metricas.json :: exact. media=0.7532 dif=-0.58pp rango=[-4.70,+3.70]pp | recall media=0.3813 dif=+0.47pp rango=[-8.33,+13.00]pp
+[OK ] 4.3 numero de semillas >= 10 (usadas 30, subconjunto 10)
+     info [arbol]: desv exactitud entre particiones (ddof=1)=0.0228 vs desv entre pliegues CV=0.0189; particiones con exactitud > media CV: 7/30
+     info [random_forest]: desv exactitud entre particiones (ddof=1)=0.0238 vs desv entre pliegues CV=0.0065; particiones con exactitud > media CV: 10/30
+
+=== 5. Afirmaciones del ingeniero ===
+[OK ] 5.1 tabla CV de metricas.md == metricas.json
+[OK ] 5.2 linea base: arbol CV -0.20 pp, RF +5.90 pp (metricas.md seccion 4)
+[OK ] 5.3 'solo se cambia la semilla de particion; semilla modelo fija 42' (config)
+[OK ] 5.4 config declarada == codigo: cv y particion
+[OK ] 5.5 codigo de validacion.py usa clone(pipeline) + scoring 'recall' (positivo por defecto = 1) y pos_label=1 en el agregado
+[OK ] 5.6 RF: mayor exactitud CV pero menor recall bad CV que el arbol (hecho observable) :: exact. 0.6980->0.7590; recall 0.5300->0.3767
+
+RESUMEN: 55/55 verificaciones OK; fallos: []

@@ -1,0 +1,371 @@
+{
+  "archivo": "datos/credit_g.csv",
+  "forma_X": [
+    1000,
+    20
+  ],
+  "n_columnas_categoricas": 13,
+  "columnas_categoricas": [
+    "checking_status",
+    "credit_history",
+    "purpose",
+    "savings_status",
+    "employment",
+    "personal_status",
+    "other_parties",
+    "property_magnitude",
+    "other_payment_plans",
+    "housing",
+    "job",
+    "own_telephone",
+    "foreign_worker"
+  ],
+  "n_columnas_numericas": 7,
+  "columnas_numericas": [
+    "duration",
+    "credit_amount",
+    "installment_commitment",
+    "residence_since",
+    "age",
+    "existing_credits",
+    "num_dependents"
+  ],
+  "clase": {
+    "good_0": 700,
+    "bad_1": 300,
+    "proporcion_good": 0.7,
+    "proporcion_bad": 0.3,
+    "linea_base_siempre_bueno_exactitud": 0.7
+  },
+  "valores_faltantes": {
+    "total_en_X": 0,
+    "total_en_y": 0,
+    "columnas_con_faltantes": {}
+  },
+  "duplicados": {
+    "filas_duplicadas_X": 0,
+    "filas_duplicadas_X_y_clase": 0,
+    "filas_X_identicas_con_clase_distinta": 0
+  },
+  "categoricas": {
+    "checking_status": {
+      "cardinalidad": 4,
+      "categorias": {
+        "no checking": 394,
+        "<0": 274,
+        "0<=X<200": 269,
+        ">=200": 63
+      },
+      "tasa_bad_por_categoria": {
+        "no checking": 0.1168,
+        "<0": 0.4927,
+        "0<=X<200": 0.3903,
+        ">=200": 0.2222
+      }
+    },
+    "credit_history": {
+      "cardinalidad": 5,
+      "categorias": {
+        "existing paid": 530,
+        "critical/other existing credit": 293,
+        "delayed previously": 88,
+        "all paid": 49,
+        "no credits/all paid": 40
+      },
+      "tasa_bad_por_categoria": {
+        "existing paid": 0.3189,
+        "critical/other existing credit": 0.1706,
+        "delayed previously": 0.3182,
+        "all paid": 0.5714,
+        "no credits/all paid": 0.625
+      }
+    },
+    "purpose": {
+      "cardinalidad": 10,
+      "categorias": {
+        "radio/tv": 280,
+        "new car": 234,
+        "furniture/equipment": 181,
+        "used car": 103,
+        "business": 97,
+        "education": 50,
+        "repairs": 22,
+        "domestic appliance": 12,
+        "other": 12,
+        "retraining": 9
+      },
+      "tasa_bad_por_categoria": {
+        "radio/tv": 0.2214,
+        "new car": 0.3803,
+        "furniture/equipment": 0.3204,
+        "used car": 0.165,
+        "business": 0.3505,
+        "education": 0.44,
+        "repairs": 0.3636,
+        "domestic appliance": 0.3333,
+        "other": 0.4167,
+        "retraining": 0.1111
+      }
+    },
+    "savings_status": {
+      "cardinalidad": 5,
+      "categorias": {
+        "<100": 603,
+        "no known savings": 183,
+        "100<=X<500": 103,
+        "500<=X<1000": 63,
+        ">=1000": 48
+      },
+      "tasa_bad_por_categoria": {
+        "<100": 0.3599,
+        "no known savings": 0.1749,
+        "100<=X<500": 0.3301,
+        "500<=X<1000": 0.1746,
+        ">=1000": 0.125
+      }
+    },
+    "employment": {
+      "cardinalidad": 5,
+      "categorias": {
+        "1<=X<4": 339,
+        ">=7": 253,
+        "4<=X<7": 174,
+        "<1": 172,
+        "unemployed": 62
+      },
+      "tasa_bad_por_categoria": {
+        "1<=X<4": 0.3068,
+        ">=7": 0.253,
+        "4<=X<7": 0.2241,
+        "<1": 0.407,
+        "unemployed": 0.371
+      }
+    },
+    "personal_status": {
+      "cardinalidad": 4,
+      "categorias": {
+        "male single": 548,
+        "female div/dep/mar": 310,
+        "male mar/wid": 92,
+        "male div/sep": 50
+      },
+      "tasa_bad_por_categoria": {
+        "male single": 0.2664,
+        "female div/dep/mar": 0.3516,
+        "male mar/wid": 0.2717,
+        "male div/sep": 0.4
+      }
+    },
+    "other_parties": {
+      "cardinalidad": 3,
+      "categorias": {
+        "none": 907,
+        "guarantor": 52,
+        "co applicant": 41
+      },
+      "tasa_bad_por_categoria": {
+        "none": 0.2999,
+        "guarantor": 0.1923,
+        "co applicant": 0.439
+      }
+    },
+    "property_magnitude": {
+      "cardinalidad": 4,
+      "categorias": {
+        "car": 332,
+        "real estate": 282,
+        "life insurance": 232,
+        "no known property": 154
+      },
+      "tasa_bad_por_categoria": {
+        "car": 0.3072,
+        "real estate": 0.2128,
+        "life insurance": 0.306,
+        "no known property": 0.4351
+      }
+    },
+    "other_payment_plans": {
+      "cardinalidad": 3,
+      "categorias": {
+        "none": 814,
+        "bank": 139,
+        "stores": 47
+      },
+      "tasa_bad_por_categoria": {
+        "none": 0.2752,
+        "bank": 0.4101,
+        "stores": 0.4043
+      }
+    },
+    "housing": {
+      "cardinalidad": 3,
+      "categorias": {
+        "own": 713,
+        "rent": 179,
+        "for free": 108
+      },
+      "tasa_bad_por_categoria": {
+        "own": 0.2609,
+        "rent": 0.3911,
+        "for free": 0.4074
+      }
+    },
+    "job": {
+      "cardinalidad": 4,
+      "categorias": {
+        "skilled": 630,
+        "unskilled resident": 200,
+        "high qualif/self emp/mgmt": 148,
+        "unemp/unskilled non res": 22
+      },
+      "tasa_bad_por_categoria": {
+        "skilled": 0.2952,
+        "unskilled resident": 0.28,
+        "high qualif/self emp/mgmt": 0.3446,
+        "unemp/unskilled non res": 0.3182
+      }
+    },
+    "own_telephone": {
+      "cardinalidad": 2,
+      "categorias": {
+        "none": 596,
+        "yes": 404
+      },
+      "tasa_bad_por_categoria": {
+        "none": 0.3138,
+        "yes": 0.2797
+      }
+    },
+    "foreign_worker": {
+      "cardinalidad": 2,
+      "categorias": {
+        "yes": 963,
+        "no": 37
+      },
+      "tasa_bad_por_categoria": {
+        "yes": 0.3074,
+        "no": 0.1081
+      }
+    }
+  },
+  "numericas": {
+    "duration": {
+      "min": 4.0,
+      "max": 72.0,
+      "media": 20.903,
+      "mediana": 18.0,
+      "desv_est": 12.0588,
+      "q1": 12.0,
+      "q3": 24.0,
+      "asimetria": 1.0942,
+      "valores_unicos": 33,
+      "atipicos_iqr_1_5": 70,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "credit_amount": {
+      "min": 250.0,
+      "max": 18424.0,
+      "media": 3271.258,
+      "mediana": 2319.5,
+      "desv_est": 2822.7369,
+      "q1": 1365.5,
+      "q3": 3972.25,
+      "asimetria": 1.9496,
+      "valores_unicos": 921,
+      "atipicos_iqr_1_5": 72,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "installment_commitment": {
+      "min": 1.0,
+      "max": 4.0,
+      "media": 2.973,
+      "mediana": 3.0,
+      "desv_est": 1.1187,
+      "q1": 2.0,
+      "q3": 4.0,
+      "asimetria": -0.5313,
+      "valores_unicos": 4,
+      "atipicos_iqr_1_5": 0,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "residence_since": {
+      "min": 1.0,
+      "max": 4.0,
+      "media": 2.845,
+      "mediana": 3.0,
+      "desv_est": 1.1037,
+      "q1": 2.0,
+      "q3": 4.0,
+      "asimetria": -0.2726,
+      "valores_unicos": 4,
+      "atipicos_iqr_1_5": 0,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "age": {
+      "min": 19.0,
+      "max": 75.0,
+      "media": 35.546,
+      "mediana": 33.0,
+      "desv_est": 11.3755,
+      "q1": 27.0,
+      "q3": 42.0,
+      "asimetria": 1.0207,
+      "valores_unicos": 53,
+      "atipicos_iqr_1_5": 23,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "existing_credits": {
+      "min": 1.0,
+      "max": 4.0,
+      "media": 1.407,
+      "mediana": 1.0,
+      "desv_est": 0.5777,
+      "q1": 1.0,
+      "q3": 2.0,
+      "asimetria": 1.2726,
+      "valores_unicos": 4,
+      "atipicos_iqr_1_5": 6,
+      "ceros": 0,
+      "negativos": 0
+    },
+    "num_dependents": {
+      "min": 1.0,
+      "max": 2.0,
+      "media": 1.155,
+      "mediana": 1.0,
+      "desv_est": 0.3621,
+      "q1": 1.0,
+      "q3": 1.0,
+      "asimetria": 1.9094,
+      "valores_unicos": 2,
+      "atipicos_iqr_1_5": 155,
+      "ceros": 0,
+      "negativos": 0
+    }
+  },
+  "anomalias": [
+    "'purpose' tiene categorias con <= 10 filas: {'retraining': 9}.",
+    "Columnas numericas con <= 5 valores distintos (discretas/ordinales, tratables como categoricas): ['installment_commitment', 'residence_since', 'existing_credits', 'num_dependents'].",
+    "'duration' es asimetrica (asimetria=1.0942, max=72.0, mediana=18.0, 70 atipicos IQR).",
+    "'credit_amount' es asimetrica (asimetria=1.9496, max=18424.0, mediana=2319.5, 72 atipicos IQR).",
+    "'age' es asimetrica (asimetria=1.0207, max=75.0, mediana=33.0, 23 atipicos IQR).",
+    "'existing_credits' es asimetrica (asimetria=1.2726, max=4.0, mediana=1.0, 6 atipicos IQR).",
+    "'num_dependents' es asimetrica (asimetria=1.9094, max=2.0, mediana=1.0, 155 atipicos IQR).",
+    "Clase desbalanceada: bad=300 (30.0%) frente a good=700; una exactitud <= 70.0% no supera la linea base trivial.",
+    "No se hallaron duplicados ni faltantes: no se propone limpiar filas.",
+    "Hay categorias con texto literal 'none' (valor valido, no faltante): {'other_parties': 907, 'other_payment_plans': 814, 'own_telephone': 596}. cargar_datos() las conserva como texto."
+  ],
+  "instrucciones_para_ingeniero": [
+    "Usar siempre cargar_datos() de src/datos.py; X llega sin transformar.",
+    "Codificar las categoricas (cols_cat) y escalar las numericas SOLO dentro de un Pipeline (p. ej. ColumnTransformer), de modo que el ajuste ocurra unicamente con los datos de entrenamiento de cada particion.",
+    "Definir las particiones (validacion cruzada y/o train/test) en su propio modulo, estratificadas por y, con semillas fijas.",
+    "Comparar toda exactitud contra la linea base «siempre bueno» (70.0%); reportar tambien metricas sensibles a la clase minoritaria (recall/F1/AUC de 'bad').",
+    "No modificar datos/credit_g.csv. Cualquier limpieza propuesta debe reportarse; aqui no se propone ninguna fila a eliminar.",
+    "Propuesta (no aplicada): considerar tratar como categoricas las numericas discretas listadas en las anomalias y/o transformar logaritmicamente credit_amount y duration dentro del Pipeline, a criterio del ingeniero."
+  ]
+}
