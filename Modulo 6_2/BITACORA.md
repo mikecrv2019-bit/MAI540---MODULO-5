@@ -11,7 +11,7 @@ Asistente: Claude (Sonnet 5.5) en Claude Code. Todas las cifras de esta bitácor
    - **Curva de aprendizaje de la 6.1:** opción A (reconstruirla con los modelos de la 6.1 y declararlo).
    - **Métrica de la búsqueda:** opción A (exactitud, registrando también el recall de «bad»).
    - **Skill de auditoría:** v2.0.
-3. Pregunta pendiente que **no** respondí: el nombre del autor en la portada. Se dejó `German Credit 6.2` (mismo criterio que la 6.1); **confirmar**.
+3. Pregunta pendiente que **no** respondí: el nombre del autor en la portada. Se dejó `German Credit 6.2` y el estudiante lo corrigió después: **autor confirmado = `German Credit 6_2`** (con guion bajo).
 
 ## 2. Contexto leído antes de escribir código
 
@@ -76,7 +76,7 @@ Los commits agrupan el estado final de cada pieza; las horas no reflejan el orde
 ## 8. Pendientes
 
 - **Push a GitHub:** no realizado (no se pidió publicar). Remoto: `mikecrv2019-bit/MAI540---MODULO-5`.
-- **Autor de la portada:** confirmar «German Credit 6.2».
+- ~~Autor de la portada~~ — resuelto: «German Credit 6_2», confirmado por el estudiante.
 - **Acciones de la auditoría sin aplicar:** V2.4 (curvas sobre el mismo `X`), V3.1 (curva optimista del árbol afinado; conjunto reservado para elegir entre modelos), V4.2 (revisar `male div/sep` y `for free`), V5.1 (validar ausentes). Aplicarlas exigiría una nueva auditoría.
 - **Texto del informe:** la recomendación y la lectura de la curva las redactó el asistente a partir de la evidencia; el estudiante debe revisarlas y hacerlas suyas.
 - No se midió cuántos tokens o minutos consumió el desarrollo asistido.
