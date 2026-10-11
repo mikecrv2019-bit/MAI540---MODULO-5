@@ -23,7 +23,7 @@ AU = json.loads((EV / "auditoria_subgrupos.json").read_text(encoding="utf-8"))
 IMP = json.loads((EV / "importancia_permutacion.json").read_text(encoding="utf-8"))
 AUDIT_MD = (RAIZ / "auditorias" / "AUDIT_REPORT_german_credit_6_2.md").read_text(encoding="utf-8")
 N_PRUEBAS = len(re.findall(r"^def test_", (RAIZ / "tests" / "test_modelo.py").read_text(encoding="utf-8"), re.M))
-AUTOR = "German Credit 6.2"  # igual criterio que la portada de la Tarea 6.1; confirmar con el estudiante
+AUTOR = "German Credit 6_2"  # confirmado por el estudiante
 FUENTE = "Calibri"
 
 C, B, A, BASE = J["comparacion"], J["busqueda"], J["anidada"], J["datos"]["linea_base_siempre_bueno"]
