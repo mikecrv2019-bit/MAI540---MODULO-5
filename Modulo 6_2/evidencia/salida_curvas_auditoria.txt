@@ -1,0 +1,42 @@
+== Curvas de aprendizaje (misma CV: StratifiedKFold(5, shuffle, 42); 10 tamanos de 80 a 800 casos) ==
+Árbol por defecto, 20 variables (6.1)            entrenamiento 1.0000 | validacion 0.6980 | brecha 1.0000 - 0.6980 = 0.3020 | pendiente validacion (480-800 casos): +1.34 pp por 100 casos
+Random Forest por defecto, 20 variables (6.1)    entrenamiento 1.0000 | validacion 0.7540 | brecha 1.0000 - 0.7540 = 0.2460 | pendiente validacion (480-800 casos): +0.64 pp por 100 casos
+Árbol afinado, 18 variables                      entrenamiento 0.7820 | validacion 0.7310 | brecha 0.7820 - 0.7310 = 0.0510 | pendiente validacion (480-800 casos): +0.82 pp por 100 casos
+Random Forest, 18 variables                      entrenamiento 1.0000 | validacion 0.7530 | brecha 1.0000 - 0.7530 = 0.2470 | pendiente validacion (480-800 casos): +0.32 pp por 100 casos
+HistGradientBoosting, 18 variables               entrenamiento 0.9998 | validacion 0.7660 | brecha 0.9998 - 0.7660 = 0.2338 | pendiente validacion (480-800 casos): +0.95 pp por 100 casos
+HistGradientBoosting, 20 variables (control)     entrenamiento 1.0000 | validacion 0.7580 | brecha 1.0000 - 0.7580 = 0.2420 | pendiente validacion (480-800 casos): +0.64 pp por 100 casos
+
+== Auditoria por subgrupo: HistGradientBoosting (predicciones fuera de pliegue, misma CV) ==
+Matriz de confusion (positiva = bad): TN=613 FP=87 FN=147 TP=153
+exactitud = (TP+TN)/total = (153+613)/1000 = 0.7660
+recall bad = TP/(TP+FN) = 153/(153+147) = 0.5100
+precision bad = TP/(TP+FP) = 153/(153+87) = 0.6375
+linea base 'siempre bueno' = 0.7000
+Metrica prioritaria: recall de bad. Umbral |recall_subgrupo - recall_global| <= 0.1; minimo 20 positivos (bad) por subgrupo
+-- age_grupo (recall global = 0.5100)
+   25-34                n= 399 bad=131 TP= 62 recall=0.4733 dif=0.4733-0.5100=-0.0367 exactitud=0.7243 -> dentro del umbral
+   35-44                n= 251 bad= 58 TP= 28 recall=0.4828 dif=0.4828-0.5100=-0.0272 exactitud=0.8247 -> dentro del umbral
+   <25                  n= 149 bad= 61 TP= 35 recall=0.5738 dif=0.5738-0.5100=+0.0638 exactitud=0.7181 -> dentro del umbral
+   >=45                 n= 201 bad= 50 TP= 28 recall=0.5600 dif=0.5600-0.5100=+0.0500 exactitud=0.8109 -> dentro del umbral
+-- personal_status (recall global = 0.5100)
+   female div/dep/mar   n= 310 bad=109 TP= 56 recall=0.5138 dif=0.5138-0.5100=+0.0038 exactitud=0.7581 -> dentro del umbral
+   male div/sep         n=  50 bad= 20 TP=  6 recall=0.3000 dif=0.3000-0.5100=-0.2100 exactitud=0.5800 -> SUPERA umbral
+   male mar/wid         n=  92 bad= 25 TP= 12 recall=0.4800 dif=0.4800-0.5100=-0.0300 exactitud=0.7174 -> dentro del umbral
+   male single          n= 548 bad=146 TP= 79 recall=0.5411 dif=0.5411-0.5100=+0.0311 exactitud=0.7956 -> dentro del umbral
+-- housing (recall global = 0.5100)
+   for free             n= 108 bad= 44 TP= 27 recall=0.6136 dif=0.6136-0.5100=+0.1036 exactitud=0.7407 -> SUPERA umbral
+   own                  n= 713 bad=186 TP= 86 recall=0.4624 dif=0.4624-0.5100=-0.0476 exactitud=0.7756 -> dentro del umbral
+   rent                 n= 179 bad= 70 TP= 40 recall=0.5714 dif=0.5714-0.5100=+0.0614 exactitud=0.7430 -> dentro del umbral
+Subgrupos evaluables que superan el umbral: 2 de 11 evaluables
+
+== Interpretabilidad: importancia por permutacion de HistGradientBoosting (caida de exactitud en prueba) ==
+   checking_status            caida = +0.0617 (DE entre pliegues 0.0147)
+   duration                   caida = +0.0432 (DE entre pliegues 0.0104)
+   credit_amount              caida = +0.0308 (DE entre pliegues 0.0217)
+   credit_history             caida = +0.0198 (DE entre pliegues 0.0072)
+   savings_status             caida = +0.0161 (DE entre pliegues 0.0109)
+   purpose                    caida = +0.0159 (DE entre pliegues 0.0166)
+   property_magnitude         caida = +0.0149 (DE entre pliegues 0.0096)
+   own_telephone              caida = +0.0095 (DE entre pliegues 0.0045)
+
+OK: evidencia/curvas.json, evidencia/auditoria_subgrupos.json/.md, evidencia/importancia_permutacion.json y figs/

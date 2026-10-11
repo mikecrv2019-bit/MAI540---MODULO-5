@@ -1,0 +1,92 @@
+[
+  {
+    "variable": "checking_status",
+    "caida_exactitud_media": 0.06170000000000002,
+    "desv_entre_pliegues": 0.01473770674155243
+  },
+  {
+    "variable": "duration",
+    "caida_exactitud_media": 0.04320000000000003,
+    "desv_entre_pliegues": 0.010425929215182704
+  },
+  {
+    "variable": "credit_amount",
+    "caida_exactitud_media": 0.03080000000000003,
+    "desv_entre_pliegues": 0.021741665069630725
+  },
+  {
+    "variable": "credit_history",
+    "caida_exactitud_media": 0.01980000000000002,
+    "desv_entre_pliegues": 0.007242237223399969
+  },
+  {
+    "variable": "savings_status",
+    "caida_exactitud_media": 0.016100000000000014,
+    "desv_entre_pliegues": 0.010928174595969824
+  },
+  {
+    "variable": "purpose",
+    "caida_exactitud_media": 0.015900000000000015,
+    "desv_entre_pliegues": 0.016648573512466482
+  },
+  {
+    "variable": "property_magnitude",
+    "caida_exactitud_media": 0.014900000000000014,
+    "desv_entre_pliegues": 0.009626785548665773
+  },
+  {
+    "variable": "own_telephone",
+    "caida_exactitud_media": 0.009500000000000008,
+    "desv_entre_pliegues": 0.004472135954999583
+  },
+  {
+    "variable": "employment",
+    "caida_exactitud_media": 0.005500000000000005,
+    "desv_entre_pliegues": 0.010914439976471547
+  },
+  {
+    "variable": "existing_credits",
+    "caida_exactitud_media": 0.005200000000000005,
+    "desv_entre_pliegues": 0.009789024466207047
+  },
+  {
+    "variable": "housing",
+    "caida_exactitud_media": 0.0050000000000000044,
+    "desv_entre_pliegues": 0.004962358310319806
+  },
+  {
+    "variable": "other_payment_plans",
+    "caida_exactitud_media": 0.004500000000000004,
+    "desv_entre_pliegues": 0.0044017042154147566
+  },
+  {
+    "variable": "residence_since",
+    "caida_exactitud_media": 0.004200000000000004,
+    "desv_entre_pliegues": 0.010134100848126595
+  },
+  {
+    "variable": "installment_commitment",
+    "caida_exactitud_media": 0.004100000000000004,
+    "desv_entre_pliegues": 0.010508330029076942
+  },
+  {
+    "variable": "num_dependents",
+    "caida_exactitud_media": 0.003500000000000003,
+    "desv_entre_pliegues": 0.0040000000000000036
+  },
+  {
+    "variable": "foreign_worker",
+    "caida_exactitud_media": 0.0029000000000000024,
+    "desv_entre_pliegues": 0.00752828001604617
+  },
+  {
+    "variable": "other_parties",
+    "caida_exactitud_media": 0.00030000000000000024,
+    "desv_entre_pliegues": 0.007137926869897175
+  },
+  {
+    "variable": "job",
+    "caida_exactitud_media": -0.0010000000000000009,
+    "desv_entre_pliegues": 0.010080922576827986
+  }
+]

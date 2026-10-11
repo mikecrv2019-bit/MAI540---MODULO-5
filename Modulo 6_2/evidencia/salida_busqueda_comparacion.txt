@@ -1,0 +1,42 @@
+Datos: 1000 filas | bad=300 good=700 | razon good/bad=2.33 | linea base 'siempre bueno' = 0.7000
+Predictoras (18): sensibles excluidas = ['age', 'personal_status']
+
+== 0. Control: reproducir la Tarea 6.1 (20 variables) ==
+Árbol (por defecto)    exactitud CV = 0.6980 | Tarea 6.1 = 0.6980 | coincide: True
+Random Forest          exactitud CV = 0.7590 | Tarea 6.1 = 0.7590 | coincide: True
+
+== 1. Busqueda sistematica con GridSearchCV (arbol) ==
+Espacio: max_depth=[1, 2, 3, 4, 5, 7, 10, None] x min_samples_leaf=[1, 2, 5, 10, 20] = 40 combinaciones x 5 pliegues = 200 ajustes (+1 de refit)
+Ganadora: {'max_depth': 5, 'min_samples_leaf': 5}
+Arbol por defecto  : exactitud CV = 0.6900 | recall bad = 0.4800
+Numero de la busqueda (optimista, best_score_): exactitud = 0.7310 | recall bad de esa combinacion = 0.3233
+Mejora de la busqueda frente al defecto (optimista): +4.10 pp | tiempo de la busqueda = 5.1 s
+  rango  1: max_depth=5, min_samples_leaf=5 -> exactitud 0.7310 (DE 0.0185), recall bad 0.3233
+  rango  2: max_depth=10, min_samples_leaf=5 -> exactitud 0.7310 (DE 0.0258), recall bad 0.5200
+  rango  3: max_depth=5, min_samples_leaf=1 -> exactitud 0.7280 (DE 0.0117), recall bad 0.3467
+  rango  4: max_depth=5, min_samples_leaf=2 -> exactitud 0.7240 (DE 0.0086), recall bad 0.3300
+  rango  4: max_depth=None, min_samples_leaf=5 -> exactitud 0.7240 (DE 0.0203), recall bad 0.4900
+
+== 2. Medicion honesta: validacion cruzada anidada (busqueda DENTRO de cada pliegue externo) ==
+  pliegue externo 1: ganadora {'max_depth': 7, 'min_samples_leaf': 10} | exactitud interna 0.7188 | exactitud externa 0.7400
+  pliegue externo 2: ganadora {'max_depth': 4, 'min_samples_leaf': 20} | exactitud interna 0.7225 | exactitud externa 0.6550
+  pliegue externo 3: ganadora {'max_depth': 5, 'min_samples_leaf': 20} | exactitud interna 0.7400 | exactitud externa 0.7050
+  pliegue externo 4: ganadora {'max_depth': 3, 'min_samples_leaf': 20} | exactitud interna 0.7087 | exactitud externa 0.7300
+  pliegue externo 5: ganadora {'max_depth': 3, 'min_samples_leaf': 10} | exactitud interna 0.7463 | exactitud externa 0.7200
+Anidada (honesta): exactitud = 0.7100 +/- 0.0334 | recall bad = 0.3567 +/- 0.1146 | tiempo total = 24.3 s
+Optimismo de la busqueda: 0.7310 (busqueda) - 0.7100 (anidada) = +2.10 pp
+Mejora HONESTA frente al defecto: 0.7100 - 0.6900 = +2.00 pp
+
+== 3. Tres modelos, mismo X, misma y, misma validacion cruzada externa ==
+Árbol (por defecto)    exactitud 0.6900 +/- 0.0127 | malos detectados 0.4800 +/- 0.0380 | ajuste 0.016 s/pliegue | matriz TN=546 FP=154 FN=156 TP=144
+Árbol afinado          exactitud 0.7100 +/- 0.0334 | malos detectados 0.3567 +/- 0.1146 | ajuste 4.856 s/pliegue | matriz TN=603 FP=97 FN=193 TP=107
+Random Forest          exactitud 0.7650 +/- 0.0200 | malos detectados 0.4167 +/- 0.0118 | ajuste 0.180 s/pliegue | matriz TN=640 FP=60 FN=175 TP=125
+HistGradientBoosting   exactitud 0.7660 +/- 0.0108 | malos detectados 0.5100 +/- 0.0346 | ajuste 0.263 s/pliegue | matriz TN=613 FP=87 FN=147 TP=153
+Linea base 'siempre bueno' = 0.7000
+
+== 4. Sensibilidad: mismos modelos con las 20 variables (incluye edad y estado civil) ==
+Árbol (por defecto)    exactitud 0.6980 | malos detectados 0.5300
+Random Forest          exactitud 0.7590 | malos detectados 0.3767
+HistGradientBoosting   exactitud 0.7580 | malos detectados 0.4833
+
+OK: evidencia/busqueda_comparacion.json y .md

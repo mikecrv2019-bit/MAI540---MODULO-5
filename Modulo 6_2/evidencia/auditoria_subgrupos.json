@@ -1,0 +1,149 @@
+{
+  "modelo": "boosting_hgb",
+  "matriz_fuera_de_pliegue": {
+    "TN": 613,
+    "FP": 87,
+    "FN": 147,
+    "TP": 153,
+    "exactitud": 0.766,
+    "recall_bad": 0.51,
+    "precision_bad": 0.6375
+  },
+  "recall_global": 0.51,
+  "umbral": 0.1,
+  "min_positivos": 20,
+  "subgrupos": [
+    {
+      "subgrupo": "age_grupo",
+      "valor": "25-34",
+      "n": 399,
+      "positivos_bad": 131,
+      "aciertos_bad": 62,
+      "exactitud": 0.7243107769423559,
+      "recall_bad": 0.4732824427480916,
+      "dif_vs_global": -0.036717557251908395,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "age_grupo",
+      "valor": "35-44",
+      "n": 251,
+      "positivos_bad": 58,
+      "aciertos_bad": 28,
+      "exactitud": 0.8247011952191236,
+      "recall_bad": 0.4827586206896552,
+      "dif_vs_global": -0.027241379310344815,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "age_grupo",
+      "valor": "<25",
+      "n": 149,
+      "positivos_bad": 61,
+      "aciertos_bad": 35,
+      "exactitud": 0.7181208053691275,
+      "recall_bad": 0.5737704918032787,
+      "dif_vs_global": 0.06377049180327865,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "age_grupo",
+      "valor": ">=45",
+      "n": 201,
+      "positivos_bad": 50,
+      "aciertos_bad": 28,
+      "exactitud": 0.8109452736318408,
+      "recall_bad": 0.56,
+      "dif_vs_global": 0.050000000000000044,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "personal_status",
+      "valor": "female div/dep/mar",
+      "n": 310,
+      "positivos_bad": 109,
+      "aciertos_bad": 56,
+      "exactitud": 0.7580645161290323,
+      "recall_bad": 0.5137614678899083,
+      "dif_vs_global": 0.0037614678899082765,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "personal_status",
+      "valor": "male div/sep",
+      "n": 50,
+      "positivos_bad": 20,
+      "aciertos_bad": 6,
+      "exactitud": 0.58,
+      "recall_bad": 0.3,
+      "dif_vs_global": -0.21000000000000002,
+      "evaluable": true,
+      "supera_umbral": true
+    },
+    {
+      "subgrupo": "personal_status",
+      "valor": "male mar/wid",
+      "n": 92,
+      "positivos_bad": 25,
+      "aciertos_bad": 12,
+      "exactitud": 0.717391304347826,
+      "recall_bad": 0.48,
+      "dif_vs_global": -0.030000000000000027,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "personal_status",
+      "valor": "male single",
+      "n": 548,
+      "positivos_bad": 146,
+      "aciertos_bad": 79,
+      "exactitud": 0.7956204379562044,
+      "recall_bad": 0.541095890410959,
+      "dif_vs_global": 0.03109589041095895,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "housing",
+      "valor": "for free",
+      "n": 108,
+      "positivos_bad": 44,
+      "aciertos_bad": 27,
+      "exactitud": 0.7407407407407407,
+      "recall_bad": 0.6136363636363636,
+      "dif_vs_global": 0.10363636363636364,
+      "evaluable": true,
+      "supera_umbral": true
+    },
+    {
+      "subgrupo": "housing",
+      "valor": "own",
+      "n": 713,
+      "positivos_bad": 186,
+      "aciertos_bad": 86,
+      "exactitud": 0.7755960729312763,
+      "recall_bad": 0.46236559139784944,
+      "dif_vs_global": -0.04763440860215057,
+      "evaluable": true,
+      "supera_umbral": false
+    },
+    {
+      "subgrupo": "housing",
+      "valor": "rent",
+      "n": 179,
+      "positivos_bad": 70,
+      "aciertos_bad": 40,
+      "exactitud": 0.7430167597765364,
+      "recall_bad": 0.5714285714285714,
+      "dif_vs_global": 0.06142857142857139,
+      "evaluable": true,
+      "supera_umbral": false
+    }
+  ]
+}
