@@ -285,6 +285,13 @@ for partes in refs:
     p.paragraph_format.left_indent = Inches(0.5)
     p.paragraph_format.first_line_indent = Inches(-0.5)
 
+cp = doc.core_properties
+cp.author = "German Credit 6.1"
+cp.title = "Flujo de trabajo con agentes especializados: validación cruzada frente a partición única en German Credit"
+cp.subject = "MAI 540: Machine Learning · Tarea 6.1"
+cp.language = "es"
+cp.comments = ""
+
 salida = RAIZ / "informe" / "Informe_Tarea_6_1.docx"
 doc.save(salida)
 print("OK:", salida)
