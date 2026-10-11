@@ -37,7 +37,7 @@ Asistente: Claude (Sonnet 5.5) en Claude Code. Todas las cifras de esta bitácor
 ## 4. Qué verifiqué
 
 - **Control de reproducción:** con las 20 variables y parámetros por defecto, el protocolo da árbol .6980 y Random Forest .7590, idénticos a la 6.1 (`salida_busqueda_comparacion.txt`, líneas 5-6).
-- **Determinismo:** se corrió `src/reproducir.py` varias veces; las cifras no cambian, solo los tiempos de ajuste.
+- **Determinismo y reproducción desde cero:** se corrió `src/reproducir.py` varias veces; las cifras no cambian, solo los tiempos de ajuste. Además, en una copia temporal de la carpeta (sin `evidencia/*.json` ni `*.txt`) se regeneró todo: los 4 JSON salieron **idénticos** a los commiteados ignorando las claves de tiempo, y las 9 pruebas pasaron. Duración de esa corrida: 96 s + 157 s (en la corrida normal fue ≈ 40 s + 60 s; depende de la carga del equipo, por lo que el «~2 min» del README es aproximado).
 - **Consistencia con la matriz de confusión:** exactitud y recall de los cuatro modelos coinciden con los derivados de la matriz agregada (la prueba `test_evidencia_consistente_con_la_matriz` y V1.2 de la auditoría).
 - **Pruebas:** 9 pruebas de pytest, todas pasan. La prueba de regresión `test_pipelines_no_comparten_estimador` se comprobó **fallando** al quitar temporalmente el `clone` de `src/modelos.py` y pasando al restaurarlo.
 - **Auditoría:** `auditorias/AUDIT_REPORT_german_credit_6_2.md` (Skill v2.0): V1 PASA, V2 FALLA (V2.4), V3 FALLA (V3.1), V4 FALLA (V4.2), V5 NO SE PUEDE DETERMINAR (V5.1), V6 PASA. Las acciones recomendadas **no se aplicaron**, para que el informe corresponda exactamente al código commiteado y auditado.
