@@ -15,7 +15,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt
 
 RAIZ = Path(__file__).resolve().parent.parent
-AUTOR = "Nombre del estudiante"          # completar antes de entregar
+AUTOR = "Jaime Lopez"
 FUENTE = "Calibri"
 
 # ---------- cifras: salida real del comando propio ----------
