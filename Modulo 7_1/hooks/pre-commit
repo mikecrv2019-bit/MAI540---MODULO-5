@@ -1,0 +1,11 @@
+#!/bin/sh
+# Hook de Git: se ejecuta solo, antes de cada commit, y lo cancela si las pruebas fallan.
+if [ -x ".venv/bin/python" ]; then PY=".venv/bin/python"            # Mac y Linux
+elif [ -x ".venv/Scripts/python.exe" ]; then PY=".venv/Scripts/python.exe"   # Windows
+else PY="python"; fi
+echo "Ejecutando las pruebas antes del commit..."
+"$PY" -m pytest -q
+if [ $? -ne 0 ]; then
+  echo "Las pruebas fallaron: commit cancelado."
+  exit 1
+fi
