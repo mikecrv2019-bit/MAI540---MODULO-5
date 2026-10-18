@@ -1,0 +1,8 @@
+{
+    "name": "auditoria-equidad",
+    "version": "1.0.0",
+    "description": "Audita el predictor de crédito por grupos (tipo de vivienda) y revisa si las conclusiones por grupo las sostienen los datos: fiabilidad del tamaño de muestra y variables usadas como predictoras.",
+    "author": {
+        "name": "Tarea 7.1 · MAI 540"
+    }
+}

@@ -1,0 +1,21 @@
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto> git commit -m "Cambio de prueba (rompe verificar_tono a proposito)"
+Ejecutando las pruebas antes del commit...
+...F.                                                                                                            [100%]
+====================================================== FAILURES =======================================================
+___________________________________ test_explicacion_segura_solo_cita_lo_permitido ____________________________________
+
+    def test_explicacion_segura_solo_cita_lo_permitido():
+        texto = explicacion_segura(DATOS, 0.78)
+>       assert verificar_explicacion(texto, DATOS, 0.78) == []         # el texto de respaldo siempre pasa
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert ['dice que el...idad es baja'] == []
+E
+E         Left contains one more item: 'dice que el riesgo es alto, pero la probabilidad es baja'
+E         Use -v to get more diff
+
+tests\test_hibrido.py:31: AssertionError
+=============================================== short test summary info ===============================================
+FAILED tests/test_hibrido.py::test_explicacion_segura_solo_cita_lo_permitido - AssertionError: assert ['dice que el...idad es baja'] == []
+1 failed, 4 passed in 4.32s
+Las pruebas fallaron: commit cancelado.
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto>

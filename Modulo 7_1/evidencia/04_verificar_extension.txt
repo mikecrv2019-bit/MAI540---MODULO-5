@@ -1,0 +1,4 @@
+OK   manifiesto: auditoria-equidad
+OK   comando: /auditoria-equidad:vivienda
+OK   agente: auditor-de-equidad
+La extensión tiene una estructura válida.
