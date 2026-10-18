@@ -1,0 +1,8 @@
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto> git commit -m "Cambio de prueba (deja un TODO sin completar en red_neuronal.py)"
+[1/2] Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 2.65s
+[2/2] Buscando bloques TODO sin completar...
+./red_neuronal.py:23:    raise NotImplementedError("TODO 4: completar en clase")
+Quedan bloques TODO sin completar: commit cancelado.
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto>
