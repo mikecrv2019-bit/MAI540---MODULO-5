@@ -23,7 +23,7 @@ python probar_modelo.py      # comprueba que el modelo de lenguaje descarga y re
 | `explicador.py` | El modelo de lenguaje que redacta la explicación |
 | `verificador.py` | Las verificaciones y el texto de respaldo |
 | `main.py` | Ejecuta la aplicación completa sobre seis solicitudes |
-| `tareas.py` | Comandos reutilizables: `evaluar`, `auditar` y `probar` |
+| `tareas.py` | Comandos reutilizables: `evaluar`, `auditar`, `probar` y `vivienda` (auditoría por tipo de vivienda) |
 | `hooks/pre-commit` y `instalar_hook.py` | La automatización: pruebas antes de cada commit |
 | `tests/test_hibrido.py` | Pruebas automáticas |
 | `verificar.py` | Comprueba un bloque: `python verificar.py <número de TODO>` |
