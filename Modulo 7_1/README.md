@@ -46,6 +46,7 @@ La versión terminada está en `Demo_Hibrido_completo/`.
 - Hook: `python instalar_hook.py` instala `hooks/pre-commit` (pytest y búsqueda de TODO pendientes). Requiere `git init`.
 - Extensión propia: `extension/` (`auditoria-equidad`), se comprueba con `python verificar_extension.py`.
 - Evidencia en `evidencia/` e informe APA en `informe/` (`python informe/generar_informe.py` lo regenera).
+- Historial: los commits de esta carpeta (incluidos el aceptado y el cancelado por el hook) se hicieron en un repositorio propio y se integraron aquí con su historial. El hook se instala en la raíz de un repositorio donde `Modulo 7_1/` es el proyecto: dentro de este repositorio de módulos, `python instalar_hook.py` no encuentra `.git`. Para probarlo, copia la carpeta a un directorio nuevo, ejecuta `git init` y luego `python instalar_hook.py`.
 
 ## La extensión (plugin)
 
