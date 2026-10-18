@@ -11,12 +11,15 @@ from datos import cargar_datos
 def entrenar_predictor():
     """Entrena con el 80% de los casos y devuelve el predictor y el 20% restante (casos que nunca vio)."""
     X, y, cols_cat, cols_num = cargar_datos()
-    # TODO 1 (en clase): separar prueba, armar el Pipeline y entrenar el Random Forest
-    raise NotImplementedError("TODO 1: completar en clase")
+    X_ent, X_pru, y_ent, y_pru = train_test_split(X, y, test_size=0.20, stratify=y, random_state=42)   # 80% / 20%
+    codificador = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)   # texto → número; categoría nueva → -1
+    prep = ColumnTransformer([("cat", codificador, cols_cat)], remainder="passthrough")  # codifica solo el texto
+    modelo = RandomForestClassifier(n_estimators=200, random_state=42)                   # 200 árboles que votan
+    predictor = Pipeline([("prep", prep), ("modelo", modelo)]).fit(X_ent, y_ent)         # preparar + modelo, entrenado
     return predictor, X_pru, y_pru
 
 
 def probabilidad_malo(predictor, X, indice):
     """Probabilidad (entre 0 y 1) de que el crédito de la fila `indice` sea malo, según el modelo."""
-    # TODO 2 (en clase): predict_proba sobre una sola fila
-    raise NotImplementedError("TODO 2: completar en clase")
+    fila = X.iloc[[indice]]                                  # una fila como tabla (el doble corchete conserva el formato)
+    return float(predictor.predict_proba(fila)[0, 1])        # columna 1 = probabilidad de la clase «malo»

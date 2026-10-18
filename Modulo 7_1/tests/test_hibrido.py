@@ -15,13 +15,15 @@ def test_texto_correcto_pasa():
 
 
 def test_detecta_un_dato_inventado():
-    # TODO 10 (en clase): un texto con un número inventado debe ser rechazado
-    raise NotImplementedError("TODO 10: completar en clase")
+    texto = "La probabilidad es de 78% y se trata de una persona de más de 75 años."   # 75 no está en los datos
+    problemas = verificar_explicacion(texto, DATOS, 0.78)
+    assert any("75" in p for p in problemas)                                          # debe mencionar el 75
 
 
 def test_detecta_tono_incoherente():
-    # TODO 11 (en clase): dice «alto» con una probabilidad baja
-    raise NotImplementedError("TODO 11: completar en clase")
+    texto = "La probabilidad es de 12%, lo cual es considerado alto."
+    problemas = verificar_explicacion(texto, {"edad": 45}, 0.12)
+    assert any("alto" in p for p in problemas)
 
 
 def test_explicacion_segura_solo_cita_lo_permitido():
