@@ -40,6 +40,13 @@ pytest -v                 # con los TODO 10 y 11
 ```
 La versión terminada está en `Demo_Hibrido_completo/`.
 
+## Tarea 7.1 · Automatización y extensión
+
+- Comando propio: `python tareas.py vivienda` (exactitud y créditos malos detectados por tipo de vivienda).
+- Hook: `python instalar_hook.py` instala `hooks/pre-commit` (pytest y búsqueda de TODO pendientes). Requiere `git init`.
+- Extensión propia: `extension/` (`auditoria-equidad`), se comprueba con `python verificar_extension.py`.
+- Evidencia en `evidencia/` e informe APA en `informe/` (`python informe/generar_informe.py` lo regenera).
+
 ## La extensión (plugin)
 
 Un plugin es una carpeta que empaqueta comandos y agentes para reutilizarlos en otro proyecto. Se arma en el paso 23 del instructivo y se comprueba con `python verificar_extension.py`. Con Claude Code se carga con `claude --plugin-dir extension` y sus comandos aparecen como `/auditoria-hibrida:auditar` y `/auditoria-hibrida:probar`.
