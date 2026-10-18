@@ -135,8 +135,9 @@ parrafo(["Empaqueta el comando ", ("/auditoria-equidad:vivienda", "c"), ", que e
          ("auditor-de-equidad", "c"), ", que contrasta una afirmación sobre un grupo con el código y los datos. Ambos "
          "difieren de los de clase, que auditaban por edad y revisaban explicaciones. ", ("verificar_extension.py", "c"),
          " no reporta ninguna línea FALTA. Al cargarla, ", ("plugin.json", "c"), " fija el nombre que prefija los comandos, ",
-         ("vivienda.md", "c"), " define qué se ejecuta y qué puede usar Claude, y ", ("auditor-de-equidad.md", "c"),
-         " le da al agente su rol y sus herramientas (Read, Grep, Glob)."])
+         ("vivienda.md", "c"), " define qué se ejecuta y el agente recibe su rol y sus herramientas de lectura. Con ",
+         ("claude --plugin-dir extension", "c"), " el comando devolvió la ficha y el agente concluyó que «es justo con todos» "
+         "no está sustentado."])
 
 titulo("Riesgo que reduce cada pieza y dónde no protege")
 tab_titulo = parrafo([("Tabla 1", "b")], indent=False, spacing=1.0, keep=True)
@@ -184,9 +185,8 @@ for celda in tabla.rows[-1].cells:
 parrafo([("Nota. ", "i"), "Cifras de ", ("python tareas.py vivienda", "c"), " sobre 200 casos de prueba."],
         indent=False, spacing=1.0)
 parrafo("", indent=False, spacing=1.0)
-parrafo(["Las tres piezas reducen errores repetibles y ninguna sustituye el criterio: la auditoría muestra dónde mirar, el hook "
-         "solo vigila lo que alguien ya escribió como regla, y la extensión empaqueta instrucciones cuya calidad "
-         "no comprueba."])
+parrafo(["Las tres piezas reducen errores repetibles, pero ninguna sustituye el criterio: el hook solo vigila reglas ya escritas "
+         "y la extensión no comprueba la calidad de sus instrucciones."])
 
 titulo("Referencias")
 parrafo(["Chacon, S., y Straub, B. (2014). ", ("Pro Git", "i"), " (2.ª ed.). Apress. https://git-scm.com/book"],
