@@ -1,0 +1,26 @@
+Paso 3 · Hook ampliado (hooks/pre-commit): comprobación 1 = pytest, comprobación 2 (propia) = que no
+quede ningún `raise NotImplementedError("TODO ...` en los .py. Se reinstaló con `python instalar_hook.py`.
+Salida literal de la terminal.
+
+--- A) La nueva comprobación se ejecuta y el commit se ACEPTA -----------------------------------------
+
+PS ...\Demo_Hibrido_incompleto> git commit -m "Amplia el hook pre-commit: ademas de pytest, cancela si quedan bloques TODO" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"
+[1/2] Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 2.54s
+[2/2] Buscando bloques TODO sin completar...
+Comprobaciones superadas.
+[main 9f718e0] Amplia el hook pre-commit: ademas de pytest, cancela si quedan bloques TODO
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+
+--- B) La nueva comprobación CANCELA un commit que pytest dejaría pasar ---------------------------------
+Se volvió a escribir `raise NotImplementedError("TODO 4: completar en clase")` en red_neuronal.py
+(archivo que ninguna prueba importa). `python -m pytest -q` solo, da "5 passed". Después se restauró el código.
+
+PS ...\Demo_Hibrido_incompleto> git commit -m "Cambio de prueba (deja un TODO sin completar en red_neuronal.py)"
+[1/2] Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 2.65s
+[2/2] Buscando bloques TODO sin completar...
+./red_neuronal.py:23:    raise NotImplementedError("TODO 4: completar en clase")
+Quedan bloques TODO sin completar: commit cancelado.
