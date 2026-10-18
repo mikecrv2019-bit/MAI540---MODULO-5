@@ -12,5 +12,7 @@
 | `01_commit_aceptado.txt`, `02_commit_cancelado.txt`, `03_hook_ampliado.txt` | 2 y 3 | Salida literal de las terminales, con la explicación de cada caso |
 | `04_verificar_extension.txt` | 4 | `python verificar_extension.py` sin ninguna línea FALTA |
 | `05_extension_que_hace_cada_archivo.md` | 5 | Qué hace cada archivo de la extensión al cargarse |
+| `05_claude_code_comando.png` | 5 | `/auditoria-equidad:vivienda` en Claude Code: la ficha de hallazgo |
+| `05_claude_code_agente.png` | 5 | El agente `auditor-de-equidad` revisa la afirmación y concluye que no está sustentada |
 
 Las capturas son de las terminales reales; los `.txt` son la misma salida en texto.
