@@ -70,3 +70,18 @@ def test_fuera_de_la_franja_no_actua(prob):
 @pytest.mark.parametrize("prob", [0.30, 0.45, 0.60])
 def test_el_texto_de_respaldo_pasa_en_la_franja(prob):
     assert verificar_explicacion(explicacion_segura(DATOS, prob), DATOS, prob) == []
+
+
+# ---- Ajuste tras la medición: falso positivo real encontrado en las solicitudes 118 y 158 ---------------------------
+@pytest.mark.parametrize("texto", [
+    "La probabilidad de crédito malo es de 36%, ya que la edad es alta (47 años).",          # «alta» describe la edad, no el riesgo
+    "La probabilidad de crédito malo es de 36%; el monto es elevado (3612) y el riesgo es medio.",
+])
+def test_no_rechaza_un_adjetivo_que_describe_otro_dato(texto):
+    assert verificador.verificar_tono_medio(texto, 0.36) == []
+
+
+def test_sigue_rechazando_lo_cual_es_alto_tras_una_cifra():
+    """El ajuste no debe perder el caso real: «…una edad de 37 años, lo cual es alto» sigue refiriéndose al riesgo."""
+    texto = "La probabilidad de crédito malo es del 36%, para una persona con una edad de 37 años, lo cual es alto."
+    assert verificador.verificar_tono_medio(texto, 0.36)

@@ -90,17 +90,23 @@ _CALIFICA_RIESGO = [                       # frases donde el adjetivo califica a
 ]
 
 
+_OTRO_DATO = {"edad", "monto", "duración", "duracion", "plazo", "saldo", "cuenta", "importe"}   # sustantivos a los que un adjetivo puede referirse
+
+
 def verificar_tono_medio(texto, prob):
     """Devuelve una lista de problemas: con probabilidad entre 30% y 60% el riesgo no es ni alto ni bajo, es medio."""
     if not 0.30 <= prob <= 0.60:                              # fuera de la franja ya actúa verificar_tono
         return []
     t = texto.lower()
     problemas = []
-    for patron in _CALIFICA_RIESGO:
+    for k, patron in enumerate(_CALIFICA_RIESGO):
         for m in re.finditer(patron, t):
             antes = t[:m.start()].split()[-2:]
             if re.search(r"\b(no|ni|sin)\b", m.group(0)) or any(p in ("no", "ni", "sin") for p in antes):
                 continue                                      # «el riesgo no es alto» es una negación verdadera
+            cerca = re.sub(r"[^\w\s]", " ", t[:m.start()]).split()[-3:]
+            if k == 1 and any(p in _OTRO_DATO for p in cerca) and not re.search(r"\b(?:cual|que|esto|ello)$", " ".join(cerca)):
+                continue                                      # «la edad es alta»: el adjetivo describe otro dato, no el riesgo
             palabra = "alto" if re.fullmatch(_ALTO, m.group(1)) else "bajo"
             problema = f"dice que el riesgo es {palabra}, pero la probabilidad ({prob:.0%}) está entre 30% y 60%: el riesgo es medio"
             if problema not in problemas:
