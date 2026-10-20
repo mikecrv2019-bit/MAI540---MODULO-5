@@ -1,0 +1,11 @@
+FAILED tests/test_regla_datos.py::test_rechaza_cuenta_corriente_contradicha
+FAILED tests/test_regla_datos.py::test_rechaza_saldo_afirmado_que_no_es_el_dato
+FAILED tests/test_regla_datos.py::test_rechaza_vivienda_contradicha - assert ...
+FAILED tests/test_regla_datos.py::test_rechaza_atributo_que_no_esta_en_los_datos
+FAILED tests/test_regla_datos.py::test_regla_conectada_a_verificar_explicacion
+FAILED tests/test_regla_datos.py::test_no_rechaza_textos_que_coinciden_con_los_datos[La probabilidad es de 78%, con una cuenta corriente de saldo negativo y vivienda alquilada.]
+FAILED tests/test_regla_datos.py::test_no_rechaza_textos_que_coinciden_con_los_datos[La probabilidad es de 78%: el solicitante alquila y su saldo es negativo.]
+FAILED tests/test_regla_datos.py::test_no_rechaza_textos_que_coinciden_con_los_datos[La probabilidad es de 78%, aunque no es propietario de su vivienda.]
+FAILED tests/test_regla_datos.py::test_no_rechaza_textos_que_coinciden_con_los_datos[La probabilidad es de 78% y el monto es de 5951.]
+FAILED tests/test_regla_datos.py::test_sin_los_campos_no_inventa_problemas - ...
+10 failed, 36 passed in 0.50s
