@@ -1,0 +1,25 @@
+#!/bin/sh
+# Hook de Git: se ejecuta solo, antes de cada commit, y lo cancela si alguna comprobación falla.
+if [ -x ".venv/bin/python" ]; then PY=".venv/bin/python"            # Mac y Linux
+elif [ -x ".venv/Scripts/python.exe" ]; then PY=".venv/Scripts/python.exe"   # Windows
+else PY="python"; fi
+
+# Comprobación 1 · las pruebas automáticas.
+echo "[1/2] Ejecutando las pruebas antes del commit..."
+"$PY" -m pytest -q
+if [ $? -ne 0 ]; then
+  echo "Las pruebas fallaron: commit cancelado."
+  exit 1
+fi
+
+# Comprobación 2 (propia) · que no quede ningún bloque TODO sin completar.
+# Las pruebas solo cubren predictor.py y verificador.py: un TODO olvidado en red_neuronal.py o
+# explicador.py pasaría pytest, pero la aplicación fallaría al ejecutarse con NotImplementedError.
+echo "[2/2] Buscando bloques TODO sin completar..."
+PENDIENTES=$(grep -rn --include="*.py" --exclude-dir=.venv --exclude-dir=.git 'raise NotImplementedError("TODO' .)
+if [ -n "$PENDIENTES" ]; then
+  echo "$PENDIENTES"
+  echo "Quedan bloques TODO sin completar: commit cancelado."
+  exit 1
+fi
+echo "Comprobaciones superadas."

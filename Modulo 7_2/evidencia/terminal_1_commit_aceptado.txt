@@ -1,0 +1,7 @@
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto> git commit -m "Completa TODO 1, 2, 7-11: predictor, verificador y pruebas" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"
+Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 3.04s
+[main 2b6be6c] Completa TODO 1, 2, 7-11: predictor, verificador y pruebas
+ 3 files changed, 28 insertions(+), 14 deletions(-)
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto>

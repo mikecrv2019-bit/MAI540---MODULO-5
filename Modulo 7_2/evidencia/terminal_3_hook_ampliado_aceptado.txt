@@ -1,0 +1,9 @@
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto> git commit -m "Amplia el hook pre-commit: ademas de pytest, cancela si quedan bloques TODO" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"
+[1/2] Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 2.54s
+[2/2] Buscando bloques TODO sin completar...
+Comprobaciones superadas.
+[main 9f718e0] Amplia el hook pre-commit: ademas de pytest, cancela si quedan bloques TODO
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+PS C:\Users\jaimelopez\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 7\Demo_Hibrido_incompleto>

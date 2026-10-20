@@ -1,0 +1,2 @@
+# El hook lo ejecuta sh: con finales de linea CRLF (Windows) fallaria.
+hooks/* text eol=lf

@@ -1,0 +1,8 @@
+Paso 2 · Commit ACEPTADO (pruebas en verde). Salida literal de la terminal.
+
+PS ...\Demo_Hibrido_incompleto> git commit -m "Completa TODO 1, 2, 7-11: predictor, verificador y pruebas" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"
+Ejecutando las pruebas antes del commit...
+.....                                                                                                            [100%]
+5 passed in 3.04s
+[main 2b6be6c] Completa TODO 1, 2, 7-11: predictor, verificador y pruebas
+ 3 files changed, 28 insertions(+), 14 deletions(-)
