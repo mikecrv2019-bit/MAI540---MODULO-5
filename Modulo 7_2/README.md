@@ -60,3 +60,4 @@ Un plugin es una carpeta que empaqueta comandos y agentes para reutilizarlos en 
 - Pruebas: `pytest -v` (71: las 5 originales, `tests/test_regla_datos.py` y `tests/test_regla_tono_medio.py`).
 - Informe APA: `python informe/generar_informe_7_2.py`. Bitácora: `bitacora/Bitacora_Tarea_7_2.md`.
 - Agente nuevo en la extensión: `revisor-de-explicaciones`.
+- Historial: los commits de la Tarea 7.2 se hicieron en un repositorio propio (donde el hook `pre-commit` corrió las pruebas en cada commit, y canceló uno mal ordenado) y se integraron aquí con su mensaje; el primero de esta carpeta es el punto de partida (el proyecto con la 7.1 terminada). Para las pruebas: crea un entorno virtual, instala las dependencias de `requirements.txt` (con Python 3.14 los pines de `transformers` y `numpy` no se instalan; se usaron versiones más nuevas) y ejecuta `pytest -v` dentro de `Modulo 7_2/`. Para regenerar los textos con el modelo de lenguaje: `python main.py 200 --regenerar`.
