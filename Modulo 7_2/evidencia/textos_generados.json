@@ -1,0 +1,2602 @@
+[
+  {
+    "solicitud": 1,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 18,
+      "monto": 1913,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.265,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 36 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 2,
+    "datos": {
+      "edad": 34,
+      "duración (meses)": 12,
+      "monto": 1860,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.255,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 34 años y una duración de 12 meses."
+  },
+  {
+    "solicitud": 3,
+    "datos": {
+      "edad": 48,
+      "duración (meses)": 24,
+      "monto": 1024,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.56,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 56%, lo cual es alto para una persona con una edad de 48 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 4,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 18,
+      "monto": 3104,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.41,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 41%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas."
+  },
+  {
+    "solicitud": 5,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 27,
+      "monto": 2520,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.415,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 42%, lo cual es alto para una persona con 23 años y un saldo de 2520 euros en una cuenta corriente de 100 euros."
+  },
+  {
+    "solicitud": 6,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 13,
+      "monto": 882,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.205,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta corriente tiene un saldo entre 0 y 200 euros. El monto total es de 882 euros, lo que indica una situación financiera sostenible."
+  },
+  {
+    "solicitud": 7,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 18,
+      "monto": 3612,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.36,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, lo cual es alto para una persona con una edad de 37 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 8,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 6,
+      "monto": 1352,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.43,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 43%, lo cual es alto para una persona con una edad de 23 años y una duración de 6 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 9,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 18,
+      "monto": 6260,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.405,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la cuenta tiene un saldo entre 0 y 200 euros y se considera alquilera."
+  },
+  {
+    "solicitud": 10,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 11,
+      "monto": 1322,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.28,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 28%, lo cual es alto para una persona con una edad de 40 años y una duración de 11 meses."
+  },
+  {
+    "solicitud": 11,
+    "datos": {
+      "edad": 39,
+      "duración (meses)": 36,
+      "monto": 2299,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.045,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 12,
+    "datos": {
+      "edad": 43,
+      "duración (meses)": 12,
+      "monto": 4843,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.37,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 37%, lo cual es alto para una persona con una edad de 43 años y una duración de 12 meses."
+  },
+  {
+    "solicitud": 13,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 4,
+      "monto": 1544,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.005,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 0%, ya que la cuenta corriente es sin cuenta corriente y la persona tiene 4 años de edad. Esto significa que su riesgo de no pagar las deudas puede ser alto."
+  },
+  {
+    "solicitud": 14,
+    "datos": {
+      "edad": 21,
+      "duración (meses)": 27,
+      "monto": 2570,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.305,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el cliente pueda pagar sus obligaciones financieras."
+  },
+  {
+    "solicitud": 15,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 18,
+      "monto": 2124,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.475,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 48%, lo cual es considerado alto para una persona con una edad de 24 años y una duración de 18 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 16,
+    "datos": {
+      "edad": 74,
+      "duración (meses)": 5,
+      "monto": 3448,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.1,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 10%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 5 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 17,
+    "datos": {
+      "edad": 68,
+      "duración (meses)": 16,
+      "monto": 1175,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.43,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 43%, lo cual es alto para una persona con una edad de 68 años y una duración de 16 meses."
+  },
+  {
+    "solicitud": 18,
+    "datos": {
+      "edad": 57,
+      "duración (meses)": 11,
+      "monto": 1154,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.145,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la edad es mayor a 60 años y la duración de la cuenta es muy corta (11 meses)."
+  },
+  {
+    "solicitud": 19,
+    "datos": {
+      "edad": 38,
+      "duración (meses)": 30,
+      "monto": 5954,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.115,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la suma de las probabilidades de crédito bueno y malo es de 76% en este caso."
+  },
+  {
+    "solicitud": 20,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 12,
+      "monto": 2279,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.17,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 17%, ya que la suma de las probabilidades de crédito bueno y malo es de 50% en este caso."
+  },
+  {
+    "solicitud": 21,
+    "datos": {
+      "edad": 54,
+      "duración (meses)": 24,
+      "monto": 2255,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.135,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 24 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 22,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 36,
+      "monto": 3595,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.135,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la suma de las probabilidades de crédito bueno y malo es de 70%."
+  },
+  {
+    "solicitud": 23,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 12,
+      "monto": 2292,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.185,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 18%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (12 meses)."
+  },
+  {
+    "solicitud": 24,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 24,
+      "monto": 3234,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.67,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 67%, lo cual es alto para una persona con 23 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 25,
+    "datos": {
+      "edad": 48,
+      "duración (meses)": 18,
+      "monto": 1795,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.425,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 42%, lo cual es alto para una persona con una edad de 48 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 26,
+    "datos": {
+      "edad": 67,
+      "duración (meses)": 18,
+      "monto": 3872,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.35,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 35%, lo cual es alto para una persona con una edad de 67 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 27,
+    "datos": {
+      "edad": 34,
+      "duración (meses)": 6,
+      "monto": 1898,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.06,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, ya que la cuenta corriente es sin cuenta corriente y la persona tiene 34 años, lo cual puede considerar como alto riesgo para el crédito."
+  },
+  {
+    "solicitud": 28,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 6,
+      "monto": 683,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.25,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 25%, ya que la cuenta corriente tiene un saldo de 200 euros o más y la persona tiene 29 años, lo cual es considerado como una situación de riesgo."
+  },
+  {
+    "solicitud": 29,
+    "datos": {
+      "edad": 47,
+      "duración (meses)": 24,
+      "monto": 5103,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.125,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la cuenta corriente es sin costo y la duración es de 24 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 30,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 12,
+      "monto": 1412,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.215,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 22%, ya que la cuenta corriente es sin cuenta corriente."
+  },
+  {
+    "solicitud": 31,
+    "datos": {
+      "edad": 45,
+      "duración (meses)": 6,
+      "monto": 1750,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.165,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 16%, ya que la edad es mayor a 65 años y el monto total es muy bajo para considerar un crédito."
+  },
+  {
+    "solicitud": 32,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 6,
+      "monto": 1068,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.3,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 33,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 12,
+      "monto": 1768,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.26,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el cliente pueda pagar sus obligaciones financieras."
+  },
+  {
+    "solicitud": 34,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 48,
+      "monto": 15672,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.76,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 76%, lo cual es alto para una persona con una edad de 23 años y una duración de 48 meses."
+  },
+  {
+    "solicitud": 35,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 36,
+      "monto": 5742,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.26,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es considerado alto para una persona con la edad indicada y una duración de 36 meses."
+  },
+  {
+    "solicitud": 36,
+    "datos": {
+      "edad": 64,
+      "duración (meses)": 24,
+      "monto": 2384,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.575,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 57%, lo cual es alto para una persona con una edad de 64 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 37,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 24,
+      "monto": 4169,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.495,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 50%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas."
+  },
+  {
+    "solicitud": 38,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 48,
+      "monto": 4308,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.75,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 75%, lo cual es considerado alto para una persona con la edad indicada y un saldo negativo en su cuenta corriente."
+  },
+  {
+    "solicitud": 39,
+    "datos": {
+      "edad": 44,
+      "duración (meses)": 6,
+      "monto": 2647,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.115,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la cuenta corriente tiene un saldo negativo y la duración es de 6 meses."
+  },
+  {
+    "solicitud": 40,
+    "datos": {
+      "edad": 43,
+      "duración (meses)": 36,
+      "monto": 15857,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.63,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 63%, lo cual es alto para una persona con una edad de 43 años y una duración de 36 meses. Además, la cuenta corriente tiene un saldo negativo, lo que también puede indicar un riesgo mayor."
+  },
+  {
+    "solicitud": 41,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 15,
+      "monto": 3959,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.345,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, lo cual es alto para una persona con una edad de 29 años y una duración de 15 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 42,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 48,
+      "monto": 3060,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.505,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 50%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 43,
+    "datos": {
+      "edad": 48,
+      "duración (meses)": 24,
+      "monto": 4351,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.255,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 48 años y una duración de 24 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 44,
+    "datos": {
+      "edad": 63,
+      "duración (meses)": 60,
+      "monto": 13756,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.435,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 44%, ya que la duración de la cuenta es muy corta (60 meses) y el monto es significativamente bajo para un préstamo de 13,756 euros."
+  },
+  {
+    "solicitud": 45,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 24,
+      "monto": 1275,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.205,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 20%, ya que la cuenta corriente tiene un saldo de 200 euros o más."
+  },
+  {
+    "solicitud": 46,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 12,
+      "monto": 522,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.065,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, ya que la edad es mayor a 60 años y la duración de la cuenta es muy corta (12 meses)."
+  },
+  {
+    "solicitud": 47,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 18,
+      "monto": 1216,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.615,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 62%, lo cual es alto para una persona con una edad de 23 años y una duración de 18 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 48,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 30,
+      "monto": 4280,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.725,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 72%, lo cual es alto para una persona con 26 años y un saldo de 4280 euros en una cuenta corriente alquilada."
+  },
+  {
+    "solicitud": 49,
+    "datos": {
+      "edad": 49,
+      "duración (meses)": 12,
+      "monto": 1262,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.31,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 31%, lo cual es alto para una persona con una edad de 49 años y una duración de 12 meses. Además, la cuenta corriente tiene un saldo negativo, lo que también puede indicar un riesgo mayor."
+  },
+  {
+    "solicitud": 50,
+    "datos": {
+      "edad": 25,
+      "duración (meses)": 12,
+      "monto": 1484,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.175,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 18%, lo cual es alto para una persona con una edad de 25 años y una duración de 12 meses."
+  },
+  {
+    "solicitud": 51,
+    "datos": {
+      "edad": 53,
+      "duración (meses)": 24,
+      "monto": 2835,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.15,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 15%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 24 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 52,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 18,
+      "monto": 2404,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.02,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 2%, lo cual es considerado bajo riesgo. El monto total del préstamo es de $2404, pero la cuenta está en corriente, por lo que no afecta significativamente su valor."
+  },
+  {
+    "solicitud": 53,
+    "datos": {
+      "edad": 75,
+      "duración (meses)": 24,
+      "monto": 6615,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.245,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 24%, ya que la cuenta tiene un saldo negativo y la vivienda está sin costo. Esto significa que hay un riesgo alto de que la persona no pueda pagar el préstamo o mantener su vivienda."
+  },
+  {
+    "solicitud": 54,
+    "datos": {
+      "edad": 22,
+      "duración (meses)": 48,
+      "monto": 5951,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.495,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 50%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 55,
+    "datos": {
+      "edad": 33,
+      "duración (meses)": 18,
+      "monto": 1131,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.695,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 70%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas."
+  },
+  {
+    "solicitud": 56,
+    "datos": {
+      "edad": 51,
+      "duración (meses)": 18,
+      "monto": 7511,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.335,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, ya que la cuenta tiene un saldo negativo y la vivienda está sin costo. Esto significa que hay un riesgo alto de que la persona no pueda pagar el préstamo o mantener su vivienda."
+  },
+  {
+    "solicitud": 57,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 6,
+      "monto": 1238,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.1,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 10%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 6 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 58,
+    "datos": {
+      "edad": 35,
+      "duración (meses)": 15,
+      "monto": 2728,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.14,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, lo cual es considerado alto para una persona con una edad de 35 años y una duración de 15 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 59,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 18,
+      "monto": 4297,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.49,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 49%, lo cual es alto para una persona con una edad de 40 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 60,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 36,
+      "monto": 5179,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.56,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 56%, lo cual es alto para una persona con una edad de 29 años y una duración de 36 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 61,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 9,
+      "monto": 745,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.205,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 20%, ya que la cuenta corriente tiene un saldo de 200 euros o más."
+  },
+  {
+    "solicitud": 62,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 18,
+      "monto": 1442,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.61,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 61%, ya que la cuenta corriente tiene un saldo negativo y la duración es muy corta."
+  },
+  {
+    "solicitud": 63,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 30,
+      "monto": 6187,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.475,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 48%, lo cual es alto para una persona con una edad de 24 años y una duración de 30 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 64,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 24,
+      "monto": 11328,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.68,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 68%, lo cual es alto para una persona con una edad de 29 años y una duración de 24 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 65,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 12,
+      "monto": 1386,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.045,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 66,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 12,
+      "monto": 1330,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.295,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 30%, lo cual es considerado alto para una persona con una edad de 26 años y una cuenta corriente de 200 euros."
+  },
+  {
+    "solicitud": 67,
+    "datos": {
+      "edad": 35,
+      "duración (meses)": 12,
+      "monto": 976,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.015,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 2%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 68,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 6,
+      "monto": 1554,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.085,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 8%, lo cual es considerado alto para una persona con 24 años y una duración de 6 meses en una cuenta corriente sin cuota."
+  },
+  {
+    "solicitud": 69,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 48,
+      "monto": 18424,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.635,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 64%, lo cual es alto para una persona con una edad de 32 años y una duración de 48 meses."
+  },
+  {
+    "solicitud": 70,
+    "datos": {
+      "edad": 30,
+      "duración (meses)": 36,
+      "monto": 4795,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.635,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 64%, lo cual es alto para una persona con una edad de 30 años y una duración de 36 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 71,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 6,
+      "monto": 14555,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.39,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 39%, lo cual es alto para una persona con una edad de 23 años y una duración de 6 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 72,
+    "datos": {
+      "edad": 46,
+      "duración (meses)": 15,
+      "monto": 1845,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.385,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 38%, ya que la cuenta corriente tiene un saldo negativo y la duración es muy corta."
+  },
+  {
+    "solicitud": 73,
+    "datos": {
+      "edad": 33,
+      "duración (meses)": 24,
+      "monto": 2058,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.08,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 8%, lo cual es considerado bajo riesgo. El monto total de la cuenta corriente es de $2058, pero la duración es muy corta para considerar un riesgo significativo."
+  },
+  {
+    "solicitud": 74,
+    "datos": {
+      "edad": 38,
+      "duración (meses)": 12,
+      "monto": 754,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.32,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 38 años y una duración de 12 meses."
+  },
+  {
+    "solicitud": 75,
+    "datos": {
+      "edad": 22,
+      "duración (meses)": 9,
+      "monto": 1670,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.285,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 28%, lo cual es alto para una persona con una edad de 22 años y un saldo de 1670 euros en una cuenta corriente de 50 euros mensuales."
+  },
+  {
+    "solicitud": 76,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 15,
+      "monto": 2360,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.08,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 8%, lo cual indica que la probabilidad de que el cliente no pueda pagar su deuda es alto."
+  },
+  {
+    "solicitud": 77,
+    "datos": {
+      "edad": 35,
+      "duración (meses)": 9,
+      "monto": 1549,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.2,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 78,
+    "datos": {
+      "edad": 22,
+      "duración (meses)": 9,
+      "monto": 1478,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.11,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 11%, lo cual es considerado alto para una persona con la edad indicada y una duración de 9 meses."
+  },
+  {
+    "solicitud": 79,
+    "datos": {
+      "edad": 30,
+      "duración (meses)": 24,
+      "monto": 1823,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.465,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 46%, lo cual es alto para una persona con una edad de 30 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 80,
+    "datos": {
+      "edad": 33,
+      "duración (meses)": 18,
+      "monto": 2051,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.185,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 18%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (18 meses)."
+  },
+  {
+    "solicitud": 81,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 36,
+      "monto": 2302,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.645,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 64%, lo cual es alto para una persona con una edad de 31 años y una duración de 36 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 82,
+    "datos": {
+      "edad": 33,
+      "duración (meses)": 15,
+      "monto": 1478,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.185,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 18%, ya que la edad es mayor a 60 años y la duración de la cuenta es muy corta (15 meses)."
+  },
+  {
+    "solicitud": 83,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 36,
+      "monto": 8086,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.315,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 42 años y una duración de 36 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 84,
+    "datos": {
+      "edad": 41,
+      "duración (meses)": 12,
+      "monto": 1503,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.09,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 9%, lo cual es considerado bajo riesgo. El monto total del préstamo es de $1503, pero la cuenta está en cuota corriente, por lo que se considera un riesgo moderado."
+  },
+  {
+    "solicitud": 85,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 12,
+      "monto": 763,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.135,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la edad es mayor a 50 años y la duración de la cuenta es muy corta (12 meses). Además, la cantidad de dinero disponible para pagar es muy bajo."
+  },
+  {
+    "solicitud": 86,
+    "datos": {
+      "edad": 27,
+      "duración (meses)": 24,
+      "monto": 6314,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.455,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 46%, lo cual es alto para una persona con 27 años y una duración de 24 meses."
+  },
+  {
+    "solicitud": 87,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 18,
+      "monto": 1113,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.3,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 88,
+    "datos": {
+      "edad": 52,
+      "duración (meses)": 6,
+      "monto": 362,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.125,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 6 meses."
+  },
+  {
+    "solicitud": 89,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 12,
+      "monto": 626,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.415,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 42%, lo cual es alto para una persona con una edad de 24 años y una duración de 12 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 90,
+    "datos": {
+      "edad": 60,
+      "duración (meses)": 24,
+      "monto": 2032,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.25,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 25%, ya que la cuenta corriente es sin costo y la duración es de 24 meses, lo cual puede considerar como un período largo para realizar pagos."
+  },
+  {
+    "solicitud": 91,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 60,
+      "monto": 6288,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.695,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 70%, lo cual es considerado alto para una persona con una edad de 42 años y una duración de 60 meses."
+  },
+  {
+    "solicitud": 92,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 15,
+      "monto": 1275,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.59,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 59%, lo cual es alto para una persona con una edad de 24 años y una duración de 15 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 93,
+    "datos": {
+      "edad": 35,
+      "duración (meses)": 6,
+      "monto": 1050,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.335,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, lo cual es alto para una persona con una edad de 35 años y una duración de 6 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 94,
+    "datos": {
+      "edad": 45,
+      "duración (meses)": 36,
+      "monto": 10875,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.25,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 25%, ya que la suma de las probabilidades de crédito bueno y malo es de 100% - 25% = 75%."
+  },
+  {
+    "solicitud": 95,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 8,
+      "monto": 1237,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.345,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, lo cual es alto para una persona con 24 años y un saldo de 1237 euros en una cuenta corriente de 50 euros mensuales."
+  },
+  {
+    "solicitud": 96,
+    "datos": {
+      "edad": 50,
+      "duración (meses)": 21,
+      "monto": 2241,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.225,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 22%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 21 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 97,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 45,
+      "monto": 11816,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.7,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 70%, ya que la cuenta corriente tiene un saldo negativo y la duración del préstamo es muy corta."
+  },
+  {
+    "solicitud": 98,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 27,
+      "monto": 3915,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.405,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, lo cual es alto para una persona con una edad de 36 años y una duración de 27 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 99,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 12,
+      "monto": 7472,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.365,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, lo cual es alto para una persona con una edad de 24 años y una duración de 12 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 100,
+    "datos": {
+      "edad": 49,
+      "duración (meses)": 18,
+      "monto": 1445,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.385,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 38%, lo cual es alto para una persona con una edad de 49 años, una duración de 18 meses, un monto de 1445 euros en cuenta corriente con saldo de 200 euros o"
+  },
+  {
+    "solicitud": 101,
+    "datos": {
+      "edad": 47,
+      "duración (meses)": 48,
+      "monto": 3578,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.12,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la suma de las probabilidades de crédito bueno y malo es de 90% en este caso."
+  },
+  {
+    "solicitud": 102,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 10,
+      "monto": 2146,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.15,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 15%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el cliente pueda pagar sus obligaciones financieras."
+  },
+  {
+    "solicitud": 103,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 10,
+      "monto": 894,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.09,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 9%, lo que significa que hay un alto riesgo de que el cliente no pueda pagar la deuda."
+  },
+  {
+    "solicitud": 104,
+    "datos": {
+      "edad": 47,
+      "duración (meses)": 18,
+      "monto": 3422,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.27,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 27%, lo cual es considerado alto para una persona con la edad mencionada y una duración de 18 meses."
+  },
+  {
+    "solicitud": 105,
+    "datos": {
+      "edad": 63,
+      "duración (meses)": 30,
+      "monto": 7596,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.165,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 16%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (30 meses). Además, la cantidad total de dinero disponible para pagar es muy bajo."
+  },
+  {
+    "solicitud": 106,
+    "datos": {
+      "edad": 58,
+      "duración (meses)": 24,
+      "monto": 1755,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.515,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 52%, lo cual es alto para una persona con una edad de 58 años y una duración de 24 meses."
+  },
+  {
+    "solicitud": 107,
+    "datos": {
+      "edad": 35,
+      "duración (meses)": 21,
+      "monto": 3976,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.15,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 15%, lo cual es considerado alto para una persona con una edad de 35 años y una duración de 21 meses."
+  },
+  {
+    "solicitud": 108,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 9,
+      "monto": 2118,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.115,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, lo cual es considerado alto para una persona con una edad de 37 años y un saldo de 2118 euros en una cuenta corriente de 5 meses."
+  },
+  {
+    "solicitud": 109,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 10,
+      "monto": 1225,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.16,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 16%, ya que la cuenta tiene un saldo de 200 euros o más y es una propiedad propia."
+  },
+  {
+    "solicitud": 110,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 18,
+      "monto": 2775,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.4,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (18 meses)."
+  },
+  {
+    "solicitud": 111,
+    "datos": {
+      "edad": 44,
+      "duración (meses)": 48,
+      "monto": 10127,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.37,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 37%, lo cual es alto para una persona con 44 años y una duración de 48 meses. La cuenta corriente sin costo también puede ser un factor importante en la probabilidad de crédito."
+  },
+  {
+    "solicitud": 112,
+    "datos": {
+      "edad": 54,
+      "duración (meses)": 24,
+      "monto": 4591,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.235,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 24%, ya que la cuenta corriente es sin cuenta corriente. El monto total es de 4591 euros, lo cual es bastante bajo para un préstamo con una duración de 24 meses."
+  },
+  {
+    "solicitud": 113,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 30,
+      "monto": 4221,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.525,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 52%, lo cual es alto para una persona con una edad de 28 años y una duración de 30 meses."
+  },
+  {
+    "solicitud": 114,
+    "datos": {
+      "edad": 64,
+      "duración (meses)": 10,
+      "monto": 1364,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.05,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 5%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 10 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 115,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 18,
+      "monto": 1505,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.09,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 9%, lo que significa que hay un alto riesgo de que el cliente no pueda pagar la deuda."
+  },
+  {
+    "solicitud": 116,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 12,
+      "monto": 1108,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.37,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 37%, lo cual es alto para una persona con una edad de 28 años y una duración de 12 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 117,
+    "datos": {
+      "edad": 21,
+      "duración (meses)": 45,
+      "monto": 3031,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.495,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 50%, ya que la cuenta corriente tiene un saldo entre 0 y 200 euros, lo cual es considerado normal para una persona de 21 años."
+  },
+  {
+    "solicitud": 118,
+    "datos": {
+      "edad": 47,
+      "duración (meses)": 18,
+      "monto": 1984,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.36,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, ya que la edad es alta (47 años) y la duración de la cuenta es corta (18 meses)."
+  },
+  {
+    "solicitud": 119,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 24,
+      "monto": 2679,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.14,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la suma de las probabilidades de crédito bueno y malo es de 86%."
+  },
+  {
+    "solicitud": 120,
+    "datos": {
+      "edad": 50,
+      "duración (meses)": 6,
+      "monto": 1047,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.235,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 24%, ya que la cuenta corriente tiene un saldo de 200 euros o más. El monto total es de 1047 euros, lo que indica una tasa de interés promedio del 3% mensual."
+  },
+  {
+    "solicitud": 121,
+    "datos": {
+      "edad": 51,
+      "duración (meses)": 24,
+      "monto": 2892,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.31,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 31%, lo que significa que hay un alto riesgo de que el cliente no pueda pagar la deuda."
+  },
+  {
+    "solicitud": 122,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 12,
+      "monto": 3499,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.225,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 22%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas."
+  },
+  {
+    "solicitud": 123,
+    "datos": {
+      "edad": 27,
+      "duración (meses)": 27,
+      "monto": 3416,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.39,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 39%, lo cual es alto para una persona con una edad de 27 años y una duración de 27 meses."
+  },
+  {
+    "solicitud": 124,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 48,
+      "monto": 10222,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.185,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 18%, ya que la edad es alta (37 años) y la duración de la cuenta es corta (48 meses)."
+  },
+  {
+    "solicitud": 125,
+    "datos": {
+      "edad": 25,
+      "duración (meses)": 24,
+      "monto": 5152,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "propia"
+    },
+    "prob": 0.33,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 33%, ya que la cuenta corriente tiene un saldo de 200 euros o más."
+  },
+  {
+    "solicitud": 126,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 6,
+      "monto": 590,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.09,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 9%, lo que significa que hay un alto riesgo de que el cliente no pueda pagar la deuda."
+  },
+  {
+    "solicitud": 127,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 18,
+      "monto": 1800,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.11,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 11%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (18 meses). Además, la cantidad de dinero disponible para pagar es limitada debido a la vivienda propia."
+  },
+  {
+    "solicitud": 128,
+    "datos": {
+      "edad": 27,
+      "duración (meses)": 21,
+      "monto": 3652,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.305,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 129,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 24,
+      "monto": 3758,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.435,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 44%, lo cual es alto para una persona con 23 años y un saldo de 3758 euros en una cuenta corriente de alquiler entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 130,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 12,
+      "monto": 2149,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.37,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 37%, ya que la cuenta tiene un saldo negativo y la vivienda está sin costo. Esto significa que hay un riesgo alto de que la persona no pueda pagar el préstamo o mantener su vivienda."
+  },
+  {
+    "solicitud": 131,
+    "datos": {
+      "edad": 30,
+      "duración (meses)": 36,
+      "monto": 8133,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.34,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, lo cual es alto para una persona con una edad de 30 años y una duración de 36 meses."
+  },
+  {
+    "solicitud": 132,
+    "datos": {
+      "edad": 43,
+      "duración (meses)": 18,
+      "monto": 2899,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.23,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 23%, lo cual es alto para una persona con una edad de 43 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 133,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 39,
+      "monto": 11760,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.52,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 52%, lo cual es alto para una persona con una edad de 32 años y una duración de 39 meses."
+  },
+  {
+    "solicitud": 134,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 12,
+      "monto": 1200,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.54,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 54%, lo cual es alto para una persona con una edad de 23 años y una duración de 12 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 135,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 24,
+      "monto": 1358,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.32,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 40 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 136,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 18,
+      "monto": 976,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.605,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 60%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas a tiempo."
+  },
+  {
+    "solicitud": 137,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 24,
+      "monto": 3062,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.19,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 19%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada."
+  },
+  {
+    "solicitud": 138,
+    "datos": {
+      "edad": 54,
+      "duración (meses)": 24,
+      "monto": 1597,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.29,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 29%, ya que la cuenta corriente es sin costo y la duración de 24 meses es bastante corta para considerar un préstamo."
+  },
+  {
+    "solicitud": 139,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 20,
+      "monto": 4272,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.385,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 38%, lo cual es alto para una persona con una edad de 24 años y una duración de 20 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 140,
+    "datos": {
+      "edad": 21,
+      "duración (meses)": 12,
+      "monto": 1289,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.375,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 38%, lo cual es alto para una persona con una edad de 21 años y una duración de 12 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 141,
+    "datos": {
+      "edad": 63,
+      "duración (meses)": 24,
+      "monto": 2924,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.44,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 44%, lo cual es alto para una persona con una edad de 63 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 142,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 36,
+      "monto": 10974,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.665,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 66%, lo cual es considerado alto para una persona con la edad mencionada y una duración de 36 meses."
+  },
+  {
+    "solicitud": 143,
+    "datos": {
+      "edad": 36,
+      "duración (meses)": 21,
+      "monto": 3275,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.04,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo. El monto total de la cuenta corriente es de $3275, pero la duración es muy corta para considerar un riesgo significativo."
+  },
+  {
+    "solicitud": 144,
+    "datos": {
+      "edad": 43,
+      "duración (meses)": 27,
+      "monto": 2442,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.445,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 44%, lo cual es alto para una persona con una edad de 43 años y una duración de 27 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 145,
+    "datos": {
+      "edad": 25,
+      "duración (meses)": 15,
+      "monto": 2631,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.355,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, lo cual es alto para una persona con una edad de 25 años y una duración de 15 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 146,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 12,
+      "monto": 759,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.41,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 41%, lo cual es alto para una persona con una edad de 26 años y una duración de 12 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 147,
+    "datos": {
+      "edad": 61,
+      "duración (meses)": 12,
+      "monto": 1255,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.05,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 5%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 12 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 148,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 24,
+      "monto": 3488,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.21,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 21%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (24 meses)."
+  },
+  {
+    "solicitud": 149,
+    "datos": {
+      "edad": 41,
+      "duración (meses)": 24,
+      "monto": 6313,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.045,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 150,
+    "datos": {
+      "edad": 47,
+      "duración (meses)": 6,
+      "monto": 1209,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.195,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 151,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 10,
+      "monto": 1546,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.055,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, lo cual es considerado bajo riesgo. El monto total de la cuenta corriente es de $1546, pero la duración es muy corta para considerar un riesgo significativo."
+  },
+  {
+    "solicitud": 152,
+    "datos": {
+      "edad": 38,
+      "duración (meses)": 12,
+      "monto": 2859,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.09,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 9%, lo que significa que hay un alto riesgo de que el cliente no pueda pagar la deuda."
+  },
+  {
+    "solicitud": 153,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 12,
+      "monto": 625,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.335,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 34%, lo cual es alto para una persona con una edad de 26 años y una duración de 12 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 154,
+    "datos": {
+      "edad": 29,
+      "duración (meses)": 12,
+      "monto": 1103,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.145,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, lo cual es considerado alto para una persona con una edad de 29 años y una cuenta corriente de 1103 euros, pero con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 155,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 15,
+      "monto": 2511,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.365,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, ya que la cuenta corriente tiene un saldo negativo y la vivienda está alquilada. Esto significa que hay un riesgo alto de que el cliente no pueda pagar las deudas a tiempo."
+  },
+  {
+    "solicitud": 156,
+    "datos": {
+      "edad": 32,
+      "duración (meses)": 12,
+      "monto": 6078,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.3,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 157,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 30,
+      "monto": 3857,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.49,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 49%, lo cual es alto para una persona con una edad de 40 años y una duración de 30 meses."
+  },
+  {
+    "solicitud": 158,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 48,
+      "monto": 12749,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.33,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 33%, ya que la edad es alta (37 años) y la duración de la cuenta es corta (48 meses)."
+  },
+  {
+    "solicitud": 159,
+    "datos": {
+      "edad": 57,
+      "duración (meses)": 12,
+      "monto": 2748,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.235,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 24%, ya que la cuenta corriente es sin costo y la duración de 12 meses es bastante corta para considerar un préstamo."
+  },
+  {
+    "solicitud": 160,
+    "datos": {
+      "edad": 60,
+      "duración (meses)": 24,
+      "monto": 1199,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.43,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 43%, lo cual es alto para una persona con una edad de 60 años y una duración de 24 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 161,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 48,
+      "monto": 7685,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.51,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 51%, lo cual es alto para una persona con una edad de 37 años y una duración de 48 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 162,
+    "datos": {
+      "edad": 33,
+      "duración (meses)": 30,
+      "monto": 2831,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.055,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, lo cual es considerado bajo riesgo. El monto total de la cuenta corriente es de $2831, pero la duración es muy corta para considerar un riesgo significativo."
+  },
+  {
+    "solicitud": 163,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 45,
+      "monto": 1845,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.595,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 60%. La cuenta corriente con un saldo negativo y la vivienda sin costo pueden ser factores que aumentan esta probabilidad."
+  },
+  {
+    "solicitud": 164,
+    "datos": {
+      "edad": 63,
+      "duración (meses)": 15,
+      "monto": 1520,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.055,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, ya que la cuenta corriente es sin cuenta corriente y la duración de la financiación es de 15 meses, lo cual puede considerar como un período largo para realizar préstamos."
+  },
+  {
+    "solicitud": 165,
+    "datos": {
+      "edad": 21,
+      "duración (meses)": 60,
+      "monto": 10144,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.385,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 38%, lo cual es alto para una persona con 21 años y una duración de 60 meses. La cuenta corriente sin cuenta corriente también puede ser un factor importante."
+  },
+  {
+    "solicitud": 166,
+    "datos": {
+      "edad": 39,
+      "duración (meses)": 54,
+      "monto": 9436,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.195,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 54 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 167,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 13,
+      "monto": 2101,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.39,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 39%, lo cual es alto para una persona con una edad de 23 años y una duración de 13 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 168,
+    "datos": {
+      "edad": 28,
+      "duración (meses)": 12,
+      "monto": 6199,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.405,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la cuenta corriente tiene un saldo negativo y la duración es muy corta."
+  },
+  {
+    "solicitud": 169,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 21,
+      "monto": 1647,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.31,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 31%, lo cual es alto para una persona con una edad de 40 años y una duración de 21 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 170,
+    "datos": {
+      "edad": 45,
+      "duración (meses)": 10,
+      "monto": 1287,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.325,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 45 años y una duración de 10 meses en una cuenta corriente sin cuenta corriente."
+  },
+  {
+    "solicitud": 171,
+    "datos": {
+      "edad": 37,
+      "duración (meses)": 36,
+      "monto": 12389,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.315,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 37 años y una duración de 36 meses."
+  },
+  {
+    "solicitud": 172,
+    "datos": {
+      "edad": 25,
+      "duración (meses)": 24,
+      "monto": 3105,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.065,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, lo cual es considerado bajo riesgo. El monto total del préstamo es de $3105, pero la cuenta está en corriente, por lo que no afecta significativamente su valor."
+  },
+  {
+    "solicitud": 173,
+    "datos": {
+      "edad": 20,
+      "duración (meses)": 11,
+      "monto": 1577,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.26,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 20 años y una duración de 11 meses en una cuenta corriente con un saldo entre 0 y 200 euros."
+  },
+  {
+    "solicitud": 174,
+    "datos": {
+      "edad": 49,
+      "duración (meses)": 12,
+      "monto": 2096,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.11,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 11%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 12 meses, lo cual puede considerar como un riesgo alto para muchos usuarios."
+  },
+  {
+    "solicitud": 175,
+    "datos": {
+      "edad": 34,
+      "duración (meses)": 7,
+      "monto": 2415,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.035,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 176,
+    "datos": {
+      "edad": 30,
+      "duración (meses)": 36,
+      "monto": 3959,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.675,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 68%, lo cual es alto para una persona con una edad de 30 años y una duración de 36 meses en una cuenta corriente sin saldo negativo."
+  },
+  {
+    "solicitud": 177,
+    "datos": {
+      "edad": 27,
+      "duración (meses)": 24,
+      "monto": 5804,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.035,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 178,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 12,
+      "monto": 1963,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.135,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el individuo pueda pagar sus obligaciones financieras con regularidad."
+  },
+  {
+    "solicitud": 179,
+    "datos": {
+      "edad": 50,
+      "duración (meses)": 48,
+      "monto": 6224,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.78,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 78%, lo cual es alto para una persona con una edad de 50 años y una duración de 48 meses."
+  },
+  {
+    "solicitud": 180,
+    "datos": {
+      "edad": 56,
+      "duración (meses)": 42,
+      "monto": 4796,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.32,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 56 años y una duración de 42 meses."
+  },
+  {
+    "solicitud": 181,
+    "datos": {
+      "edad": 20,
+      "duración (meses)": 12,
+      "monto": 4675,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.155,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 16%, ya que la suma de las probabilidades de crédito bueno y malo es de 84% en este caso. El monto disponible para el préstamo es de $4675, pero la cuenta corriente está vacía."
+  },
+  {
+    "solicitud": 182,
+    "datos": {
+      "edad": 55,
+      "duración (meses)": 24,
+      "monto": 1603,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.495,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 50%, ya que la cuenta corriente tiene un saldo negativo y la persona es propietaria de una vivienda. Esto podría indicar un riesgo alto de debilidad financiera."
+  },
+  {
+    "solicitud": 183,
+    "datos": {
+      "edad": 40,
+      "duración (meses)": 15,
+      "monto": 1905,
+      "cuenta corriente": "saldo de 200 o más",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.275,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 28%, ya que la cuenta corriente tiene un saldo de 200 euros o más y la duración es de 15 meses."
+  },
+  {
+    "solicitud": 184,
+    "datos": {
+      "edad": 22,
+      "duración (meses)": 24,
+      "monto": 3149,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.515,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 52%, lo cual es alto para una persona con 22 años y una duración de 24 meses. La cuenta corriente tiene un saldo negativo, lo que también puede indicar un riesgo mayor."
+  },
+  {
+    "solicitud": 185,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 18,
+      "monto": 1936,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.395,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 40%, ya que la cuenta corriente tiene un saldo negativo y la vivienda está alquilada. Esto significa que hay un riesgo alto de que el cliente no pueda pagar las deudas a tiempo."
+  },
+  {
+    "solicitud": 186,
+    "datos": {
+      "edad": 68,
+      "duración (meses)": 6,
+      "monto": 14896,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.475,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 48%, lo cual es alto para una persona con una edad de 68 años y una duración de 6 meses. La cuenta corriente tiene un saldo negativo, lo que puede indicar una situación financiera crítica."
+  },
+  {
+    "solicitud": 187,
+    "datos": {
+      "edad": 24,
+      "duración (meses)": 72,
+      "monto": 5595,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.535,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 54%, lo cual es alto para una persona con 24 años y un saldo de 5595 euros en una cuenta corriente de 100 euros mensuales."
+  },
+  {
+    "solicitud": 188,
+    "datos": {
+      "edad": 41,
+      "duración (meses)": 6,
+      "monto": 250,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.28,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 28%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (6 meses). Además, la cantidad de dinero disponible para pagar es muy bajo."
+  },
+  {
+    "solicitud": 189,
+    "datos": {
+      "edad": 59,
+      "duración (meses)": 9,
+      "monto": 1364,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.195,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola."
+  },
+  {
+    "solicitud": 190,
+    "datos": {
+      "edad": 41,
+      "duración (meses)": 21,
+      "monto": 3160,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.02,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 2%, lo cual es considerado bajo riesgo."
+  },
+  {
+    "solicitud": 191,
+    "datos": {
+      "edad": 26,
+      "duración (meses)": 24,
+      "monto": 3181,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.1,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 10%, ya que la suma de las probabilidades de crédito bueno y malo es de 50% en este caso."
+  },
+  {
+    "solicitud": 192,
+    "datos": {
+      "edad": 23,
+      "duración (meses)": 24,
+      "monto": 1246,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.395,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la cuenta tiene un saldo entre 0 y 200 euros y es una propiedad propia."
+  },
+  {
+    "solicitud": 193,
+    "datos": {
+      "edad": 48,
+      "duración (meses)": 10,
+      "monto": 2241,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "alquilada"
+    },
+    "prob": 0.125,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la cuenta corriente tiene un saldo negativo y la duración es muy corta."
+  },
+  {
+    "solicitud": 194,
+    "datos": {
+      "edad": 27,
+      "duración (meses)": 24,
+      "monto": 937,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.17,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 17%, ya que la edad es mayor a 65 años y la duración de la cuenta es muy corta (24 meses)."
+  },
+  {
+    "solicitud": 195,
+    "datos": {
+      "edad": 61,
+      "duración (meses)": 12,
+      "monto": 2012,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.08,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 8%, ya que la edad es mayor a 65 años y la duración de la cuenta es de aproximadamente 12 meses."
+  },
+  {
+    "solicitud": 196,
+    "datos": {
+      "edad": 53,
+      "duración (meses)": 48,
+      "monto": 7119,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "sin costo"
+    },
+    "prob": 0.76,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 76%, lo cual es alto para una persona con una edad de 53 años y una duración de 48 meses. La cuenta corriente tiene un saldo negativo, lo que puede indicar una situación financiera crítica."
+  },
+  {
+    "solicitud": 197,
+    "datos": {
+      "edad": 42,
+      "duración (meses)": 18,
+      "monto": 2427,
+      "cuenta corriente": "saldo entre 0 y 200",
+      "vivienda": "propia"
+    },
+    "prob": 0.235,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 24%, lo cual es alto para una persona con una edad de 42 años y una duración de 18 meses."
+  },
+  {
+    "solicitud": 198,
+    "datos": {
+      "edad": 25,
+      "duración (meses)": 12,
+      "monto": 1262,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.065,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 6%, lo cual es considerado bajo riesgo. El monto total de la cuenta corriente es de $1262, pero la duración es muy corta para considerar un riesgo significativo."
+  },
+  {
+    "solicitud": 199,
+    "datos": {
+      "edad": 31,
+      "duración (meses)": 30,
+      "monto": 6350,
+      "cuenta corriente": "saldo negativo",
+      "vivienda": "propia"
+    },
+    "prob": 0.325,
+    "real": "malo",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 32%, lo cual es alto para una persona con una edad de 31 años, una duración de 30 meses, un monto de 6350 euros y una cuenta corriente con saldo negativo."
+  },
+  {
+    "solicitud": 200,
+    "datos": {
+      "edad": 34,
+      "duración (meses)": 21,
+      "monto": 1591,
+      "cuenta corriente": "sin cuenta corriente",
+      "vivienda": "propia"
+    },
+    "prob": 0.14,
+    "real": "bueno",
+    "texto": "El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la edad es alta (34 años) y la duración de la cuenta es corta (21 meses)."
+  }
+]

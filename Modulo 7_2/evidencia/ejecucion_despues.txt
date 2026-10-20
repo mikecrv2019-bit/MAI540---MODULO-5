@@ -1,0 +1,124 @@
+Entrenando el modelo predictivo...
+
+--- Solicitud 1 | probabilidad de crédito malo: 26% | real: bueno
+Datos: edad: 36; duración (meses): 18; monto: 1913; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 36 años y una duración de 18 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad es baja
+Se muestra: El modelo estima una probabilidad de 26% de que el crédito sea malo (riesgo bajo). Datos: edad: 36, duración (meses): 18, monto: 1913, cuenta corriente: saldo entre 0 y 200, vivienda: propia.
+
+--- Solicitud 2 | probabilidad de crédito malo: 26% | real: bueno
+Datos: edad: 34; duración (meses): 12; monto: 1860; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 26%, lo cual es alto para una persona con una edad de 34 años y una duración de 12 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad es baja
+Se muestra: El modelo estima una probabilidad de 26% de que el crédito sea malo (riesgo bajo). Datos: edad: 34, duración (meses): 12, monto: 1860, cuenta corriente: saldo entre 0 y 200, vivienda: propia.
+
+--- Solicitud 3 | probabilidad de crédito malo: 56% | real: malo
+Datos: edad: 48; duración (meses): 24; monto: 1024; cuenta corriente: saldo negativo; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 56%, lo cual es alto para una persona con una edad de 48 años y una duración de 24 meses en una cuenta corriente sin saldo negativo.
+Verificación: dice que la cuenta corriente no tiene saldo negativo, pero el dato es «saldo negativo»; dice que el riesgo es alto, pero la probabilidad (56%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 56% de que el crédito sea malo (riesgo medio). Datos: edad: 48, duración (meses): 24, monto: 1024, cuenta corriente: saldo negativo, vivienda: propia.
+
+--- Solicitud 4 | probabilidad de crédito malo: 41% | real: bueno
+Datos: edad: 31; duración (meses): 18; monto: 3104; cuenta corriente: saldo negativo; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 41%, ya que la cuenta corriente tiene un saldo negativo y la persona es una persona sola. Esto significa que hay un riesgo alto de no poder pagar las deudas.
+Verificación: afirmación sin dato que la respalde: persona sola; dice que el riesgo es alto, pero la probabilidad (41%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 41% de que el crédito sea malo (riesgo medio). Datos: edad: 31, duración (meses): 18, monto: 3104, cuenta corriente: saldo negativo, vivienda: propia.
+
+--- Solicitud 5 | probabilidad de crédito malo: 42% | real: malo
+Datos: edad: 23; duración (meses): 27; monto: 2520; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 42%, lo cual es alto para una persona con 23 años y un saldo de 2520 euros en una cuenta corriente de 100 euros.
+Verificación: número no sustentado: 100; dice que el riesgo es alto, pero la probabilidad (42%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 42% de que el crédito sea malo (riesgo medio). Datos: edad: 23, duración (meses): 27, monto: 2520, cuenta corriente: saldo entre 0 y 200, vivienda: propia.
+
+--- Solicitud 6 | probabilidad de crédito malo: 20% | real: bueno
+Datos: edad: 23; duración (meses): 13; monto: 882; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta corriente tiene un saldo entre 0 y 200 euros. El monto total es de 882 euros, lo que indica una situación financiera sostenible.
+Verificación: OK
+Se muestra: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 20%, ya que la cuenta corriente tiene un saldo entre 0 y 200 euros. El monto total es de 882 euros, lo que indica una situación financiera sostenible.
+
+--- Solicitud 7 | probabilidad de crédito malo: 36% | real: bueno
+Datos: edad: 37; duración (meses): 18; monto: 3612; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 36%, lo cual es alto para una persona con una edad de 37 años y una duración de 18 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad (36%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 36% de que el crédito sea malo (riesgo medio). Datos: edad: 37, duración (meses): 18, monto: 3612, cuenta corriente: saldo entre 0 y 200, vivienda: propia.
+
+--- Solicitud 8 | probabilidad de crédito malo: 43% | real: bueno
+Datos: edad: 23; duración (meses): 6; monto: 1352; cuenta corriente: saldo negativo; vivienda: alquilada
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 43%, lo cual es alto para una persona con una edad de 23 años y una duración de 6 meses en una cuenta corriente sin saldo negativo.
+Verificación: dice que la cuenta corriente no tiene saldo negativo, pero el dato es «saldo negativo»; dice que el riesgo es alto, pero la probabilidad (43%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 43% de que el crédito sea malo (riesgo medio). Datos: edad: 23, duración (meses): 6, monto: 1352, cuenta corriente: saldo negativo, vivienda: alquilada.
+
+--- Solicitud 9 | probabilidad de crédito malo: 40% | real: bueno
+Datos: edad: 28; duración (meses): 18; monto: 6260; cuenta corriente: saldo entre 0 y 200; vivienda: alquilada
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la cuenta tiene un saldo entre 0 y 200 euros y se considera alquilera.
+Verificación: OK
+Se muestra: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 40%, ya que la cuenta tiene un saldo entre 0 y 200 euros y se considera alquilera.
+
+--- Solicitud 10 | probabilidad de crédito malo: 28% | real: bueno
+Datos: edad: 40; duración (meses): 11; monto: 1322; cuenta corriente: saldo entre 0 y 200; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 28%, lo cual es alto para una persona con una edad de 40 años y una duración de 11 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad es baja
+Se muestra: El modelo estima una probabilidad de 28% de que el crédito sea malo (riesgo bajo). Datos: edad: 40, duración (meses): 11, monto: 1322, cuenta corriente: saldo entre 0 y 200, vivienda: propia.
+
+--- Solicitud 11 | probabilidad de crédito malo: 4% | real: bueno
+Datos: edad: 39; duración (meses): 36; monto: 2299; cuenta corriente: sin cuenta corriente; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo.
+Verificación: OK
+Se muestra: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 4%, lo cual es considerado bajo riesgo.
+
+--- Solicitud 12 | probabilidad de crédito malo: 37% | real: malo
+Datos: edad: 43; duración (meses): 12; monto: 4843; cuenta corriente: saldo negativo; vivienda: alquilada
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 37%, lo cual es alto para una persona con una edad de 43 años y una duración de 12 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad (37%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 37% de que el crédito sea malo (riesgo medio). Datos: edad: 43, duración (meses): 12, monto: 4843, cuenta corriente: saldo negativo, vivienda: alquilada.
+
+--- Solicitud 13 | probabilidad de crédito malo: 0% | real: bueno
+Datos: edad: 42; duración (meses): 4; monto: 1544; cuenta corriente: sin cuenta corriente; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de 0%, ya que la cuenta corriente es sin cuenta corriente y la persona tiene 4 años de edad. Esto significa que su riesgo de no pagar las deudas puede ser alto.
+Verificación: dice que el riesgo es alto, pero la probabilidad es baja
+Se muestra: El modelo estima una probabilidad de 0% de que el crédito sea malo (riesgo bajo). Datos: edad: 42, duración (meses): 4, monto: 1544, cuenta corriente: sin cuenta corriente, vivienda: propia.
+
+--- Solicitud 14 | probabilidad de crédito malo: 30% | real: malo
+Datos: edad: 21; duración (meses): 27; monto: 2570; cuenta corriente: sin cuenta corriente; vivienda: alquilada
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el cliente pueda pagar sus obligaciones financieras.
+Verificación: OK
+Se muestra: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 30%, ya que la cuenta corriente es sin cuenta corriente y la vivienda está alquilada. Esto significa que hay una menor probabilidad de que el cliente pueda pagar sus obligaciones financieras.
+
+--- Solicitud 15 | probabilidad de crédito malo: 48% | real: malo
+Datos: edad: 24; duración (meses): 18; monto: 2124; cuenta corriente: saldo negativo; vivienda: alquilada
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo de aproximadamente 48%, lo cual es considerado alto para una persona con una edad de 24 años y una duración de 18 meses en una cuenta corriente sin saldo negativo.
+Verificación: dice que la cuenta corriente no tiene saldo negativo, pero el dato es «saldo negativo»; dice que el riesgo es alto, pero la probabilidad (48%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 48% de que el crédito sea malo (riesgo medio). Datos: edad: 24, duración (meses): 18, monto: 2124, cuenta corriente: saldo negativo, vivienda: alquilada.
+
+--- Solicitud 16 | probabilidad de crédito malo: 10% | real: bueno
+Datos: edad: 74; duración (meses): 5; monto: 3448; cuenta corriente: sin cuenta corriente; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 10%, ya que la cuenta corriente es sin cuenta corriente y la duración de la cuenta es de 5 meses, lo cual puede considerar como un riesgo alto para muchos usuarios.
+Verificación: dice que el riesgo es alto, pero la probabilidad es baja
+Se muestra: El modelo estima una probabilidad de 10% de que el crédito sea malo (riesgo bajo). Datos: edad: 74, duración (meses): 5, monto: 3448, cuenta corriente: sin cuenta corriente, vivienda: propia.
+
+--- Solicitud 17 | probabilidad de crédito malo: 43% | real: bueno
+Datos: edad: 68; duración (meses): 16; monto: 1175; cuenta corriente: saldo entre 0 y 200; vivienda: sin costo
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 43%, lo cual es alto para una persona con una edad de 68 años y una duración de 16 meses.
+Verificación: dice que el riesgo es alto, pero la probabilidad (43%) está entre 30% y 60%: el riesgo es medio
+Se muestra: El modelo estima una probabilidad de 43% de que el crédito sea malo (riesgo medio). Datos: edad: 68, duración (meses): 16, monto: 1175, cuenta corriente: saldo entre 0 y 200, vivienda: sin costo.
+
+--- Solicitud 18 | probabilidad de crédito malo: 14% | real: bueno
+Datos: edad: 57; duración (meses): 11; monto: 1154; cuenta corriente: sin cuenta corriente; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 14%, ya que la edad es mayor a 60 años y la duración de la cuenta es muy corta (11 meses).
+Verificación: número no sustentado: 60
+Se muestra: El modelo estima una probabilidad de 14% de que el crédito sea malo (riesgo bajo). Datos: edad: 57, duración (meses): 11, monto: 1154, cuenta corriente: sin cuenta corriente, vivienda: propia.
+
+--- Solicitud 19 | probabilidad de crédito malo: 12% | real: bueno
+Datos: edad: 38; duración (meses): 30; monto: 5954; cuenta corriente: sin cuenta corriente; vivienda: propia
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 12%, ya que la suma de las probabilidades de crédito bueno y malo es de 76% en este caso.
+Verificación: número no sustentado: 76
+Se muestra: El modelo estima una probabilidad de 12% de que el crédito sea malo (riesgo bajo). Datos: edad: 38, duración (meses): 30, monto: 5954, cuenta corriente: sin cuenta corriente, vivienda: propia.
+
+--- Solicitud 20 | probabilidad de crédito malo: 17% | real: bueno
+Datos: edad: 37; duración (meses): 12; monto: 2279; cuenta corriente: sin cuenta corriente; vivienda: sin costo
+Modelo de lenguaje: El modelo de riesgo de crédito sugiere una probabilidad de crédito malo del 17%, ya que la suma de las probabilidades de crédito bueno y malo es de 50% en este caso.
+Verificación: número no sustentado: 50
+Se muestra: El modelo estima una probabilidad de 17% de que el crédito sea malo (riesgo bajo). Datos: edad: 37, duración (meses): 12, monto: 2279, cuenta corriente: sin cuenta corriente, vivienda: sin costo.
+
+Explicaciones rechazadas por la verificación: 16 de 20
+Textos guardados en evidencia\textos_generados.json
