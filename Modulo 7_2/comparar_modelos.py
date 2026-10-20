@@ -35,6 +35,24 @@ def comparar():
     }
 
 
+def validacion_cruzada():
+    """Exactitud y malos detectados de ambos modelos con validación cruzada de 5 pliegues (más estable que 200 casos)."""
+    from sklearn.compose import ColumnTransformer
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.model_selection import StratifiedKFold, cross_validate
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import OrdinalEncoder
+    X, y, cols_cat, cols_num = cargar_datos()
+    prep = ColumnTransformer([("cat", OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1), cols_cat)], remainder="passthrough")
+    rf = Pipeline([("prep", prep), ("modelo", RandomForestClassifier(n_estimators=200, random_state=42))])
+    cv = StratifiedKFold(5, shuffle=True, random_state=42)
+    salida = {}
+    for nombre, modelo in (("red", crear_red(cols_cat, cols_num)), ("rf", rf)):
+        res = cross_validate(modelo, X, y, cv=cv, scoring=("accuracy", "recall"))
+        salida[nombre] = (res["test_accuracy"].mean(), res["test_accuracy"].std(), res["test_recall"].mean())
+    return salida
+
+
 if __name__ == "__main__":
     r = comparar()
     print(f"Solicitudes de prueba: {r['n_prueba']} ({r['malos_en_prueba']} malas) | exactitud de decir siempre «bueno»: {r['base_siempre_bueno']:.3f}")
@@ -42,3 +60,7 @@ if __name__ == "__main__":
     print(f"               exactitud ENTRENAMIENTO {r['red_entrenamiento']:.3f} | PRUEBA {r['red_prueba']:.3f} | malos detectados {r['red_recall_malo']:.3f}")
     print(f"Random Forest  {r['rf_arboles']} árboles, {r['rf_nodos']:,} nodos en total")
     print(f"               exactitud ENTRENAMIENTO {r['rf_entrenamiento']:.3f} | PRUEBA {r['rf_prueba']:.3f} | malos detectados {r['rf_recall_malo']:.3f}")
+    cv = validacion_cruzada()
+    print("Validación cruzada de 5 pliegues (todos los datos):")
+    print(f"  Red neuronal   exactitud {cv['red'][0]:.3f} ± {cv['red'][1]:.3f} | malos detectados {cv['red'][2]:.3f}")
+    print(f"  Random Forest  exactitud {cv['rf'][0]:.3f} ± {cv['rf'][1]:.3f} | malos detectados {cv['rf'][2]:.3f}")

@@ -1,0 +1,8 @@
+Solicitudes de prueba: 200 (60 malas) | exactitud de decir siempre «bueno»: 0.700
+Red neuronal   capas [61, 16, 8, 1] | pesos aprendidos: 1,137
+               exactitud ENTRENAMIENTO 1.000 | PRUEBA 0.735 | malos detectados 0.533
+Random Forest  200 árboles, 66,656 nodos en total
+               exactitud ENTRENAMIENTO 1.000 | PRUEBA 0.770 | malos detectados 0.383
+Validación cruzada de 5 pliegues (todos los datos):
+  Red neuronal   exactitud 0.717 ± 0.024 | malos detectados 0.520
+  Random Forest  exactitud 0.755 ± 0.010 | malos detectados 0.363
