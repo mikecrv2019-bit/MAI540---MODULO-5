@@ -22,7 +22,7 @@ python probar_modelo.py      # comprueba que el modelo de lenguaje descarga y re
 | `red_neuronal.py` | Una red neuronal sencilla: capas y pesos |
 | `explicador.py` | El modelo de lenguaje que redacta la explicación |
 | `verificador.py` | Las verificaciones y el texto de respaldo |
-| `main.py` | Ejecuta la aplicación completa sobre seis solicitudes |
+| `main.py` | Ejecuta la aplicación completa sobre N solicitudes (`python main.py 200`) y guarda los textos |
 | `tareas.py` | Comandos reutilizables: `evaluar`, `auditar`, `probar` y `vivienda` (auditoría por tipo de vivienda) |
 | `hooks/pre-commit` y `instalar_hook.py` | La automatización: pruebas antes de cada commit |
 | `tests/test_hibrido.py` | Pruebas automáticas |
@@ -50,3 +50,13 @@ La versión terminada está en `Demo_Hibrido_completo/`.
 ## La extensión (plugin)
 
 Un plugin es una carpeta que empaqueta comandos y agentes para reutilizarlos en otro proyecto. Se arma en el paso 23 del instructivo y se comprueba con `python verificar_extension.py`. Con Claude Code se carga con `claude --plugin-dir extension` y sus comandos aparecen como `/auditoria-hibrida:auditar` y `/auditoria-hibrida:probar`.
+
+## Tarea 7.2 · Aplicación híbrida con verificación
+
+- `python comparar_modelos.py`: red neuronal frente al Random Forest sobre las mismas 200 solicitudes de prueba.
+- `python main.py 20` (o `200`): recorre N solicitudes; los textos quedan en `evidencia/textos_generados.json` y se reutilizan (`--regenerar` los vuelve a pedir al modelo).
+- `verificador.py` suma dos reglas a `verificar_explicacion`: `verificar_datos` (el texto no contradice cuenta corriente ni vivienda, ni inventa atributos) y `verificar_tono_medio` (ni «alto» ni «bajo» con probabilidad de 30 % a 60 %). `verificar_base` conserva el verificador de clase para medir el antes.
+- `python medir_efecto.py 200`: tabla de rechazos antes y después; usa `evidencia/etiquetas.json` (revisión manual) para contar falsos positivos.
+- Pruebas: `pytest -v` (71: las 5 originales, `tests/test_regla_datos.py` y `tests/test_regla_tono_medio.py`).
+- Informe APA: `python informe/generar_informe_7_2.py`. Bitácora: `bitacora/Bitacora_Tarea_7_2.md`.
+- Agente nuevo en la extensión: `revisor-de-explicaciones`.
