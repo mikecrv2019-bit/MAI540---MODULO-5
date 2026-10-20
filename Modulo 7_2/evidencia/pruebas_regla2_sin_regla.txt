@@ -1,0 +1,15 @@
+FAILED tests/test_regla_tono_medio.py::test_rechaza_riesgo_alto_con_probabilidad_media
+FAILED tests/test_regla_tono_medio.py::test_rechaza_riesgo_alto_en_el_segundo_ejemplo_real
+FAILED tests/test_regla_tono_medio.py::test_rechaza_riesgo_bajo_con_probabilidad_media
+FAILED tests/test_regla_tono_medio.py::test_la_franja_incluye_30_y_60[0.3] - ...
+FAILED tests/test_regla_tono_medio.py::test_la_franja_incluye_30_y_60[0.45]
+FAILED tests/test_regla_tono_medio.py::test_la_franja_incluye_30_y_60[0.6] - ...
+FAILED tests/test_regla_tono_medio.py::test_regla_conectada_a_verificar_explicacion
+FAILED tests/test_regla_tono_medio.py::test_no_rechaza_textos_correctos_en_la_franja[La probabilidad de cr\xe9dito malo es de 41%, un riesgo medio.]
+FAILED tests/test_regla_tono_medio.py::test_no_rechaza_textos_correctos_en_la_franja[La probabilidad de cr\xe9dito malo es de 41%, un riesgo moderado, ni alto ni bajo.]
+FAILED tests/test_regla_tono_medio.py::test_no_rechaza_textos_correctos_en_la_franja[La probabilidad de cr\xe9dito malo es de 41% y el riesgo no es alto.]
+FAILED tests/test_regla_tono_medio.py::test_no_rechaza_textos_correctos_en_la_franja[La probabilidad de cr\xe9dito malo es de 41%; bajo estas condiciones, el an\xe1lisis sigue.]
+FAILED tests/test_regla_tono_medio.py::test_no_rechaza_textos_correctos_en_la_franja[La probabilidad de cr\xe9dito malo es de 41% para un monto alto de 5000.]
+FAILED tests/test_regla_tono_medio.py::test_fuera_de_la_franja_no_actua[0.299]
+FAILED tests/test_regla_tono_medio.py::test_fuera_de_la_franja_no_actua[0.601]
+14 failed, 3 passed in 0.52s

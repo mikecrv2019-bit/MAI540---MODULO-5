@@ -79,6 +79,35 @@ def verificar_datos(texto, datos):
     return problemas
 
 
+# ---- Regla nueva 2 · tono en la franja intermedia (30% a 60%) ------------------------------------------------------
+_ALTO = r"alt[oa]s?|elevad[oa]s?|grave|cr[ií]tic[oa]|preocupante"
+_BAJO = r"baj[oa]s?|m[ií]nim[oa]|insignificante|despreciable|reducid[oa]"
+_NIVEL = rf"(?:{_ALTO}|{_BAJO})"
+_CALIFICA_RIESGO = [                       # frases donde el adjetivo califica al riesgo o a la probabilidad (no al monto, ni «bajo» preposición)
+    rf"\b(?:riesgo|probabilidad|nivel)\s+(?:\w+\s+){{0,2}}({_NIVEL})\b",     # «riesgo alto», «probabilidad es baja»
+    rf"\b(?:es|sea|resulta|considerad[oa]|calificad[oa])\s+(?:como\s+)?(?:muy\s+|bastante\s+)?({_NIVEL})\b",   # «lo cual es alto»
+    rf"\b({_NIVEL})\s+(?:riesgo|nivel)\b",                                  # «alto riesgo», «bajo riesgo»
+]
+
+
+def verificar_tono_medio(texto, prob):
+    """Devuelve una lista de problemas: con probabilidad entre 30% y 60% el riesgo no es ni alto ni bajo, es medio."""
+    if not 0.30 <= prob <= 0.60:                              # fuera de la franja ya actúa verificar_tono
+        return []
+    t = texto.lower()
+    problemas = []
+    for patron in _CALIFICA_RIESGO:
+        for m in re.finditer(patron, t):
+            antes = t[:m.start()].split()[-2:]
+            if re.search(r"\b(no|ni|sin)\b", m.group(0)) or any(p in ("no", "ni", "sin") for p in antes):
+                continue                                      # «el riesgo no es alto» es una negación verdadera
+            palabra = "alto" if re.fullmatch(_ALTO, m.group(1)) else "bajo"
+            problema = f"dice que el riesgo es {palabra}, pero la probabilidad ({prob:.0%}) está entre 30% y 60%: el riesgo es medio"
+            if problema not in problemas:
+                problemas.append(problema)
+    return problemas
+
+
 def explicacion_segura(datos, prob):
     """Texto de respaldo, armado solo con datos y la probabilidad. No usa el modelo de lenguaje."""
     nivel = "bajo" if prob < 0.30 else ("medio" if prob <= 0.60 else "alto")   # mismos umbrales que verificar_tono
@@ -93,4 +122,4 @@ def verificar_base(texto, datos, prob):
 
 def verificar_explicacion(texto, datos, prob):
     """Reúne todas las verificaciones. Lista vacía = el texto se puede mostrar."""
-    return verificar_base(texto, datos, prob) + verificar_datos(texto, datos)
+    return verificar_base(texto, datos, prob) + verificar_datos(texto, datos) + verificar_tono_medio(texto, prob)
