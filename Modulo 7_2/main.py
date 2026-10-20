@@ -30,6 +30,14 @@ print("Entrenando el modelo predictivo...")
 predictor, X_pru, y_pru = entrenar_predictor()                    # modelo + casos que nunca vio
 tokenizador = modelo = None                                       # el modelo de lenguaje se carga solo si hace falta
 
+def guardar(registros):
+    """Guarda los textos fusionados con los que ya había, para que correr con un N menor no borre los demás."""
+    todos = {**guardados, **{r["solicitud"]: r for r in registros}}
+    os.makedirs("evidencia", exist_ok=True)
+    with open(SALIDA, "w", encoding="utf-8") as f:
+        json.dump([todos[k] for k in sorted(todos)], f, ensure_ascii=False, indent=2)
+
+
 rechazadas = 0
 registros = []
 for i in range(N):                                                # solicitudes de prueba
@@ -54,12 +62,8 @@ for i in range(N):                                                # solicitudes 
     print("Verificación:", "OK" if not problemas else "; ".join(problemas))
     print("Se muestra:", final)
     if modelo is not None and (i + 1) % 10 == 0:                  # guarda el avance por si se interrumpe una corrida larga
-        os.makedirs("evidencia", exist_ok=True)
-        with open(SALIDA, "w", encoding="utf-8") as f:
-            json.dump(registros, f, ensure_ascii=False, indent=2)
+        guardar(registros)
 print(f"\nExplicaciones rechazadas por la verificación: {rechazadas} de {N}")
 
-os.makedirs("evidencia", exist_ok=True)
-with open(SALIDA, "w", encoding="utf-8") as f:
-    json.dump(registros, f, ensure_ascii=False, indent=2)
+guardar(registros)
 print(f"Textos guardados en {SALIDA}")
