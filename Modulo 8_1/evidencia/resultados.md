@@ -49,6 +49,6 @@ Confusiones (real → predicho): class_2 → class_1: 1.
 
 ## K-Means exploratorio (k = 3)
 
-- Silueta: 0.2849 (piloto 0.2849).
-- Estabilidad (ARI en 30 remuestreos): 0.941 ± 0.042 (min 0.834).
-- Acuerdo con `cultivar` (ARI): 0.897.
+- Ajustado solo con el entrenamiento (142 lotes). Silueta: 0.2875 (piloto 0.2849).
+- Estabilidad (ARI en 30 remuestreos): 0.945 ± 0.031 (min 0.894).
+- Acuerdo con `cultivar` (ARI): 0.894 en entrenamiento, 0.909 en la prueba final (filas que K-Means no vio).

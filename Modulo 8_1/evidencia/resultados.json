@@ -389,19 +389,21 @@
   ],
   "segmentacion_kmeans": {
     "k": 3,
-    "silueta": 0.2848589191898987,
+    "ajustado_con": 142,
+    "silueta": 0.28746035719503016,
     "silueta_piloto": 0.2849,
     "tamano_por_grupo": {
-      "0": 65,
-      "1": 51,
-      "2": 62
+      "0": 49,
+      "1": 41,
+      "2": 52
     },
     "estabilidad_ari": {
-      "media": 0.9411775159986444,
-      "desv": 0.04190216633747762,
-      "min": 0.834110029071582,
+      "media": 0.9445675744527119,
+      "desv": 0.031173982468625603,
+      "min": 0.8940308340438229,
       "n_remuestreos": 30
     },
-    "ari_vs_cultivar": 0.8974949815093207
+    "ari_vs_cultivar_entrenamiento": 0.8936932637187417,
+    "ari_vs_cultivar_prueba": 0.9087939960390535
   }
 }
