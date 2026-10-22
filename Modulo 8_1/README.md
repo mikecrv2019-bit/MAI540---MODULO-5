@@ -91,7 +91,7 @@ Requisitos: Python 3.10 o superior (probado con 3.14) y Git.
 
 ```bash
 git clone https://github.com/mikecrv2019-bit/MAI540---MODULO-5.git
-cd MAI540---MODULO-5/Capstone_Dilitio_Wine
+cd MAI540---MODULO-5/Modulo 8_1
 python -m venv .venv
 source .venv/bin/activate        # en Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -108,7 +108,7 @@ python instalar_hook.py
 
 ## Cómo ejecutar
 
-Todos los comandos se ejecutan desde la carpeta `Capstone_Dilitio_Wine/`.
+Todos los comandos se ejecutan desde la carpeta `Modulo 8_1/`.
 
 1. Entrenar, validar y guardar la evidencia (tarda unos segundos):
 
@@ -147,12 +147,12 @@ Todos los comandos se ejecutan desde la carpeta `Capstone_Dilitio_Wine/`.
 pytest -v
 ```
 
-Se esperan **20 pruebas en verde** (unos 10 segundos). Comprueban: forma y validación de los datos (no se acepta NaN ni
+Se esperan **21 pruebas en verde** (unos 10 segundos). Comprueban: forma y validación de los datos (no se acepta NaN ni
 columnas faltantes); partición estratificada y sin traslape; que el escalador aprende solo del entrenamiento (sin fuga);
 que la validación cruzada es determinista y tiene 15 estimaciones; el criterio de selección con resultados sintéticos; que el
 modelo elegido supera a la línea base, que su desviación es ≤ 0.05 y que la prueba final lo confirma; el análisis de
 errores con un caso calculado a mano; los criterios del K-Means; y la herramienta de uso (entradas inválidas, advertencia
-de rango, servidor MCP). La salida completa guardada está en `evidencia/pytest_v_final.txt`.
+de rango, servidor MCP y su mensaje de error). La salida completa guardada está en `evidencia/pytest_v_final.txt`.
 
 ## Limitaciones
 
@@ -179,7 +179,7 @@ decisiones, instrucciones y verificaciones está en `BITACORA.md`.
 ## Estructura del repositorio
 
 ```
-Capstone_Dilitio_Wine/
+Modulo 8_1/
 ├── README.md
 ├── BITACORA.md                  instrucciones, verificaciones y correcciones
 ├── requirements.txt
@@ -188,7 +188,7 @@ Capstone_Dilitio_Wine/
 ├── hooks/pre-commit             pytest + búsqueda de claves antes de cada commit
 ├── datos/wine.csv               datos (UCI Wine, CC BY 4.0)
 ├── src/                         datos, modelos, validación, selección, errores, K-Means, entrenar, predecir, servidor MCP
-├── tests/                       20 pruebas con pytest
+├── tests/                       21 pruebas con pytest
 ├── evidencia/                   resultados, salida de pytest -v y del hook
 ├── auditorias/                  informes de la Skill de auditoría
 ├── revision/                    texto de los pull requests con su revisión

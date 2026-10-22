@@ -1,7 +1,7 @@
 # Informe de auditoría — Capstone Dilitio Wine Corp (rama `feat/herramienta-readme`, estado final)
 
-- **Archivos auditados:** `Capstone_Dilitio_Wine/src/datos.py`, `modelos.py`, `validacion.py`, `seleccion.py`, `errores.py`, `segmentacion.py`, `entrenar.py`, `predecir.py`; salida guardada `Capstone_Dilitio_Wine/evidencia/resultados.json`
-- **Archivos de apoyo leídos:** `Capstone_Dilitio_Wine/README.md`
+- **Archivos auditados:** `Modulo 8_1/src/datos.py`, `modelos.py`, `validacion.py`, `seleccion.py`, `errores.py`, `segmentacion.py`, `entrenar.py`, `predecir.py`; salida guardada `Modulo 8_1/evidencia/resultados.json`
+- **Archivos de apoyo leídos:** `Modulo 8_1/README.md`
 - **Columna objetivo:** `cultivar` — codificación: texto, `class_0`, `class_1`, `class_2` (evidencia: `datos.py:16` `CLASES = ["class_0", "class_1", "class_2"]`; carga en `datos.py:43` `return df[PREDICTORAS].copy(), df[OBJETIVO].copy()`)
 - **Tipo de problema:** clasificación multiclase, 3 clases (evidencia: `modelos.py:21` `DummyClassifier(strategy="most_frequent")`, `modelos.py:24` `LogisticRegression(max_iter=1000, random_state=SEMILLA)`)
 - **Subgrupos:** `cultivar` (origen: argumento). Es la propia variable objetivo (categorías); el proyecto no tiene atributos protegidos (`README.md:27-31`, 13 mediciones químicas).
