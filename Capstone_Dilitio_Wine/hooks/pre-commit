@@ -1,10 +1,10 @@
 #!/bin/sh
 # Hook de Git (Modulo 7): se ejecuta solo antes de cada commit y lo cancela si una comprobacion falla.
-# Solo actua cuando el commit toca archivos de Modulo 8_1/ (el repositorio tiene otros modulos).
+# Solo actua cuando el commit toca archivos de Capstone_Dilitio_Wine/ (el repositorio tiene otros modulos).
 RAIZ=$(git rev-parse --show-toplevel)
-CAP="$RAIZ/Modulo 8_1"
-if ! git diff --cached --name-only | grep -q '^Modulo 8_1/'; then
-  echo "[hook] El commit no toca Modulo 8_1/: se omiten las comprobaciones."
+CAP="$RAIZ/Capstone_Dilitio_Wine"
+if ! git diff --cached --name-only | grep -q '^Capstone_Dilitio_Wine/'; then
+  echo "[hook] El commit no toca Capstone_Dilitio_Wine/: se omiten las comprobaciones."
   exit 0
 fi
 
@@ -22,7 +22,7 @@ fi
 
 # Comprobacion 2 · ninguna clave ni secreto en lo que se va a confirmar.
 echo "[hook 2/2] Buscando claves o secretos en los archivos del commit..."
-SECRETOS=$(git diff --cached -U0 -- "Modulo 8_1" ':!Modulo 8_1/hooks' | grep -E '^\+' | grep -E 'sk-ant-|ANTHROPIC_API_KEY *= *[A-Za-z0-9_-]{8,}|BEGIN (RSA|OPENSSH) PRIVATE KEY|ghp_[A-Za-z0-9]{20,}')
+SECRETOS=$(git diff --cached -U0 -- Capstone_Dilitio_Wine ':!Capstone_Dilitio_Wine/hooks' | grep -E '^\+' | grep -E 'sk-ant-|ANTHROPIC_API_KEY *= *[A-Za-z0-9_-]{8,}|BEGIN (RSA|OPENSSH) PRIVATE KEY|ghp_[A-Za-z0-9]{20,}')
 if [ -n "$SECRETOS" ]; then
   echo "$SECRETOS"
   echo "[hook] Posible clave o secreto en el commit: cancelado."

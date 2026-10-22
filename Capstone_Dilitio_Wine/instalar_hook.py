@@ -1,6 +1,6 @@
 """Instala el hook de Git (pre-commit) que ejecuta las pruebas antes de cada commit.
 
-Uso (desde cualquier carpeta del repositorio):  python Modulo 8_1/instalar_hook.py
+Uso (desde cualquier carpeta del repositorio):  python Capstone_Dilitio_Wine/instalar_hook.py
 """
 import os
 import shutil
