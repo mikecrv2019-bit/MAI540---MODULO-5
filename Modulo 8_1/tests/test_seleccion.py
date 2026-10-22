@@ -33,3 +33,9 @@ def test_descarta_modelos_que_no_superan_la_linea_base():
     assert d["descartados_por_linea_base"] == ["arbol"]
     with pytest.raises(ValueError, match="Ningun modelo supera"):
         elegir_modelo(_res(0.50, arbol=(0.52, 0.01)))
+
+
+def test_modelo_desconocido_da_error_claro():
+    """Un modelo que no esta en COMPLEJIDAD no se puede ordenar: error explicito en vez de un ValueError de list.index."""
+    with pytest.raises(ValueError, match="sin lugar en COMPLEJIDAD"):
+        elegir_modelo(_res(0.20, svm=(0.95, 0.02)))

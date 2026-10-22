@@ -18,6 +18,9 @@ MEJORA_MINIMA = 0.10
 
 def elegir_modelo(resultados):
     """`resultados`: {nombre: {"f1_macro": {"media", "desv"}}}. Devuelve el modelo elegido y la explicacion."""
+    desconocidos = sorted(set(resultados) - {LINEA_BASE} - set(COMPLEJIDAD))
+    if desconocidos:
+        raise ValueError(f"Modelos sin lugar en COMPLEJIDAD (modelos.py): {desconocidos}")
     base = resultados[LINEA_BASE]["f1_macro"]["media"]
     candidatos = {n: r["f1_macro"] for n, r in resultados.items()
                   if n != LINEA_BASE and r["f1_macro"]["media"] >= base + MEJORA_MINIMA}
