@@ -46,6 +46,9 @@ def evaluar_cv(estimador, X, y, cv=None):
         f1_macro.append(f1_score(y.iloc[te], p, average="macro"))
         if i < N_PLIEGUES:  # primera repeticion: los 5 pliegues cubren cada fila una vez
             pred_oof[te] = p
+    if any(p is None for p in pred_oof):
+        raise ValueError(f"El cv entregado no cubre todas las filas en sus primeros {N_PLIEGUES} pliegues; "
+                         "use crear_cv() (5 pliegues por repeticion).")
     return {
         "exactitud": resumen(exactitud),
         "f1_macro": resumen(f1_macro),

@@ -1,6 +1,7 @@
 """Pruebas de la particion, la validacion cruzada y la ausencia de fuga de datos."""
 import numpy as np
 import pytest
+from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.preprocessing import StandardScaler
 
 from datos import cargar_datos
@@ -45,3 +46,10 @@ def test_validacion_cruzada_es_determinista_y_tiene_15_estimaciones(datos):
     assert len(a["f1_macro_por_pliegue"]) == 15
     assert a["f1_macro_por_pliegue"] == b["f1_macro_por_pliegue"]
     assert a["f1_macro"]["desv"] > 0
+
+
+def test_cv_que_no_cubre_todas_las_filas_falla_con_mensaje_claro(datos):
+    """Un cv con 10 pliegues por repeticion deja la mitad de las filas sin prediccion fuera de pliegue: debe fallar, no producir un analisis de errores falso."""
+    X, y = datos
+    with pytest.raises(ValueError, match="no cubre todas las filas"):
+        evaluar_cv(crear_modelos()["arbol"], X, y, RepeatedStratifiedKFold(n_splits=10, n_repeats=1, random_state=42))
