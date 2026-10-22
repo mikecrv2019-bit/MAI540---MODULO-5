@@ -91,7 +91,7 @@ Requisitos: Python 3.10 o superior (probado con 3.14) y Git.
 
 ```bash
 git clone https://github.com/mikecrv2019-bit/MAI540---MODULO-5.git
-cd MAI540---MODULO-5/Modulo 8_1
+cd MAI540---MODULO-5/Capstone_Dilitio_Wine
 python -m venv .venv
 source .venv/bin/activate        # en Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -105,7 +105,7 @@ python instalar_hook.py
 
 ## Cómo ejecutar
 
-Todos los comandos se ejecutan desde la carpeta `Modulo 8_1/`.
+Todos los comandos se ejecutan desde la carpeta `Capstone_Dilitio_Wine/`.
 
 1. Entrenar, validar y guardar la evidencia (tarda unos segundos):
 
@@ -169,7 +169,7 @@ decisiones, instrucciones y verificaciones está en `BITACORA.md`.
 ## Estructura del repositorio
 
 ```
-Modulo 8_1/
+Capstone_Dilitio_Wine/
 ├── README.md
 ├── BITACORA.md                  instrucciones, verificaciones y correcciones
 ├── requirements.txt

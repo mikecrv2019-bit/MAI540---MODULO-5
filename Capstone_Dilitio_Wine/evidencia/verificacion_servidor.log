@@ -1,0 +1,47 @@
+
+=== List Tools ===
+[
+  "clasificar_lote",
+  "resumen_validacion"
+]
+
+=== TOOL resumen_validacion  isError=False ===
+{
+  "elegido": "regresion_logistica",
+  "f1_macro_cv": {
+    "linea_base": 0.191,
+    "regresion_logistica": 0.981,
+    "arbol": 0.921,
+    "random_forest": 0.981,
+    "boosting": 0.959
+  }
+}
+
+=== TOOL clasificar_lote (lote 0)  isError=False ===
+{
+  "perfil": "class_0",
+  "probabilidades": {
+    "class_0": 0.9998,
+    "class_1": 0.0002,
+    "class_2": 0.0
+  },
+  "modelo": "regresion_logistica",
+  "advertencias": []
+}
+
+=== TOOL clasificar_lote (prolina 20000, fuera de rango) ===
+{
+  "perfil": "class_0",
+  "probabilidades": {
+    "class_0": 1.0,
+    "class_1": 0.0,
+    "class_2": 0.0
+  },
+  "modelo": "regresion_logistica",
+  "advertencias": [
+    "proline=20000.0 fuera del rango de entrenamiento [278.0, 1680.0]"
+  ]
+}
+
+=== TOOL clasificar_lote (lote incompleto)  isError=True ===
+Error executing tool clasificar_lote
