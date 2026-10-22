@@ -4,7 +4,7 @@ Rama `feat/modelo-validado` → `main`. (Texto del PR según `plantilla_pull_req
 
 ## Qué cambia
 
-Agrega el flujo de modelado del capstone en `Modulo 8_1/`: carga y validación de datos, línea base y cuatro
+Agrega el flujo de modelado del capstone en `Capstone_Dilitio_Wine/`: carga y validación de datos, línea base y cuatro
 modelos en `Pipeline`, validación cruzada 5×3 con media y desviación, criterio explícito de selección, una sola medición en
 la prueba final, análisis de errores por categoría y K-Means exploratorio, más 16 pruebas, el hook `pre-commit` y la Skill
 de auditoría.
