@@ -52,7 +52,7 @@ def ejecutar():
         "errores_validacion_cruzada": errores_cv,
         "errores_prueba_final": errores_prueba,
         "filas_mal_clasificadas_en_prueba": mal_clasificados,
-        "segmentacion_kmeans": segmentar(X, y),
+        "segmentacion_kmeans": segmentar(X_tr, y_tr, X_te, y_te),
     }
 
     EVIDENCIA.mkdir(exist_ok=True)
@@ -94,10 +94,11 @@ def _markdown(r):
         L += ["", f"Confusiones (real → predicho): {pares}."]
     k = r["segmentacion_kmeans"]
     L += ["", "## K-Means exploratorio (k = 3)", "",
-          f"- Silueta: {k['silueta']:.4f} (piloto {k['silueta_piloto']}).",
+          f"- Ajustado solo con el entrenamiento ({k['ajustado_con']} lotes). Silueta: {k['silueta']:.4f} (piloto {k['silueta_piloto']}).",
           f"- Estabilidad (ARI en {k['estabilidad_ari']['n_remuestreos']} remuestreos): "
           f"{k['estabilidad_ari']['media']:.3f} ± {k['estabilidad_ari']['desv']:.3f} (min {k['estabilidad_ari']['min']:.3f}).",
-          f"- Acuerdo con `cultivar` (ARI): {k['ari_vs_cultivar']:.3f}.", ""]
+          f"- Acuerdo con `cultivar` (ARI): {k['ari_vs_cultivar_entrenamiento']:.3f} en entrenamiento, "
+          f"{k['ari_vs_cultivar_prueba']:.3f} en la prueba final (filas que K-Means no vio).", ""]
     return "\n".join(L)
 
 

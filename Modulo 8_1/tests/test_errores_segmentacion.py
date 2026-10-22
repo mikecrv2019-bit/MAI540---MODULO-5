@@ -4,6 +4,7 @@ import pytest
 from datos import cargar_datos
 from errores import analisis_por_categoria
 from segmentacion import SILUETA_PILOTO, segmentar
+from validacion import dividir
 
 
 def test_analisis_por_categoria_con_un_caso_conocido():
@@ -18,9 +19,12 @@ def test_analisis_por_categoria_con_un_caso_conocido():
 
 
 def test_kmeans_cumple_silueta_del_piloto_y_es_estable():
-    """Criterio (a): silueta >= 0.2849 (piloto). Criterio (b): ARI medio de remuestreo >= 0.80."""
+    """(a) silueta >= 0.2849 (piloto), sin tolerancia; (b) ARI medio de remuestreo >= 0.80; se ajusta solo con entrenamiento."""
     X, y = cargar_datos()
-    s = segmentar(X, y, n_remuestreos=10)
-    assert s["silueta"] >= SILUETA_PILOTO - 5e-5
+    X_tr, X_te, y_tr, y_te = dividir(X, y)
+    s = segmentar(X_tr, y_tr, X_te, y_te, n_remuestreos=10)
+    assert s["ajustado_con"] == len(X_tr) < len(X)
+    assert s["silueta"] >= SILUETA_PILOTO
     assert s["estabilidad_ari"]["media"] >= 0.80
-    assert sum(s["tamano_por_grupo"].values()) == 178
+    assert s["ari_vs_cultivar_prueba"] >= 0.80
+    assert sum(s["tamano_por_grupo"].values()) == len(X_tr)
