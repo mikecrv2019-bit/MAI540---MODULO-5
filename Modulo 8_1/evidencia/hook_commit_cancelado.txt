@@ -1,0 +1,17 @@
+$ git commit -m "prueba: commit con una prueba que falla (para demostrar el hook)"
+[hook 1/2] Ejecutando pytest antes del commit...
+............F....                                                        [100%]
+================================== FAILURES ===================================
+___________________________ test_falla_a_proposito ____________________________
+
+    def test_falla_a_proposito():
+>       assert 1 == 2, "prueba temporal para demostrar que el hook cancela el commit"
+E       AssertionError: prueba temporal para demostrar que el hook cancela el commit
+E       assert 1 == 2
+
+tests\test_temporal.py:2: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_temporal.py::test_falla_a_proposito - AssertionError: prueb...
+1 failed, 16 passed in 9.46s
+[hook] Las pruebas fallaron: commit cancelado.
+(exit code del commit: 1)
