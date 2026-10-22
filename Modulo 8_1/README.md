@@ -91,11 +91,14 @@ Requisitos: Python 3.10 o superior (probado con 3.14) y Git.
 
 ```bash
 git clone https://github.com/mikecrv2019-bit/MAI540---MODULO-5.git
-cd MAI540---MODULO-5/Capstone_Dilitio_Wine
+cd MAI540---MODULO-5/Modulo 8_1
 python -m venv .venv
 source .venv/bin/activate        # en Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
+
+Si en Windows `python -m venv .venv` falla con `WinError 267`, la ruta de la carpeta es demasiado larga: clone el
+repositorio en una carpeta corta (por ejemplo `C:\proyectos`). La instalación de dependencias tarda unos 2 o 3 minutos.
 
 Opcional (recomendado si va a hacer commits): instalar el hook que ejecuta las pruebas antes de cada commit.
 
@@ -105,7 +108,7 @@ python instalar_hook.py
 
 ## Cómo ejecutar
 
-Todos los comandos se ejecutan desde la carpeta `Capstone_Dilitio_Wine/`.
+Todos los comandos se ejecutan desde la carpeta `Modulo 8_1/`.
 
 1. Entrenar, validar y guardar la evidencia (tarda unos segundos):
 
@@ -125,7 +128,14 @@ Todos los comandos se ejecutan desde la carpeta `Capstone_Dilitio_Wine/`.
 
    Se debe ver `"perfil": "class_0"` con probabilidad 0.9998 y `"advertencias": []`.
 
-3. Opcional, como servidor MCP (Inspector en el navegador; necesita Node.js):
+3. Opcional, como servidor MCP. Verificación por línea de comandos (no necesita Node.js; guarda
+   `evidencia/verificacion_servidor.log`):
+
+   ```bash
+   python verificar_servidor.py
+   ```
+
+   Y con el Inspector en el navegador (necesita Node.js):
 
    ```bash
    mcp dev src/mcp_server.py
@@ -169,11 +179,12 @@ decisiones, instrucciones y verificaciones está en `BITACORA.md`.
 ## Estructura del repositorio
 
 ```
-Capstone_Dilitio_Wine/
+Modulo 8_1/
 ├── README.md
 ├── BITACORA.md                  instrucciones, verificaciones y correcciones
 ├── requirements.txt
 ├── instalar_hook.py             instala el hook pre-commit
+├── verificar_servidor.py        prueba las tools del servidor MCP por el protocolo real
 ├── hooks/pre-commit             pytest + búsqueda de claves antes de cada commit
 ├── datos/wine.csv               datos (UCI Wine, CC BY 4.0)
 ├── src/                         datos, modelos, validación, selección, errores, K-Means, entrenar, predecir, servidor MCP

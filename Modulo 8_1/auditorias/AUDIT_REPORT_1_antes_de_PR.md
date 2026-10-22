@@ -1,6 +1,6 @@
 # Informe de auditoría — Capstone Dilitio Wine Corp (rama `feat/modelo-validado`, antes del PR 1)
 
-- **Archivos auditados:** `Capstone_Dilitio_Wine/src/datos.py`, `modelos.py`, `validacion.py`, `seleccion.py`, `errores.py`, `segmentacion.py`, `entrenar.py`; salida guardada `Capstone_Dilitio_Wine/evidencia/resultados.json`
+- **Archivos auditados:** `Modulo 8_1/src/datos.py`, `modelos.py`, `validacion.py`, `seleccion.py`, `errores.py`, `segmentacion.py`, `entrenar.py`; salida guardada `Modulo 8_1/evidencia/resultados.json`
 - **Archivos de apoyo leídos:** ninguno (la carpeta aún no tiene `README.md`, `context.md` ni `DESCRIPCION.md`; solo se usan las docstrings de `datos.py` y `seleccion.py` como declaración del autor)
 - **Columna objetivo:** `cultivar` — codificación: texto, `class_0`, `class_1`, `class_2` (evidencia: `datos.py:16` `CLASES = ["class_0", "class_1", "class_2"]`; carga en `datos.py:43` `return df[PREDICTORAS].copy(), df[OBJETIVO].copy()`)
 - **Tipo de problema:** clasificación multiclase, 3 clases (evidencia: `modelos.py:21` `DummyClassifier(strategy="most_frequent")`, `modelos.py:27` `DecisionTreeClassifier(max_depth=3, random_state=SEMILLA)`)
