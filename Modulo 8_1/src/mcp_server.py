@@ -28,7 +28,10 @@ mcp = MCPServer("capstone-dilitio-wine")
 def clasificar_lote(
     valores: dict[str, float] = Field(description="Diccionario con las 13 variables quimicas del lote"),
 ) -> dict:
-    return _clasificar_lote(valores)
+    try:
+        return _clasificar_lote(valores)
+    except ValueError as e:  # el cliente MCP solo ve "Error executing tool": se devuelve el motivo
+        return {"error": str(e)}
 
 
 @mcp.tool(

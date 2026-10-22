@@ -49,3 +49,11 @@ def test_el_servidor_mcp_registra_las_dos_tools():
     pytest.importorskip("mcp")
     import mcp_server
     assert callable(mcp_server.clasificar_lote) and callable(mcp_server.resumen_validacion)
+
+
+def test_la_tool_mcp_devuelve_el_motivo_cuando_el_lote_es_invalido():
+    """Un cliente MCP solo veria 'Error executing tool'; la tool debe devolver el motivo del rechazo."""
+    pytest.importorskip("mcp")
+    import mcp_server
+    r = mcp_server.clasificar_lote({"alcohol": 14.0})
+    assert "Faltan" in r["error"]

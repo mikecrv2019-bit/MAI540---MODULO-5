@@ -43,5 +43,7 @@
   ]
 }
 
-=== TOOL clasificar_lote (lote incompleto)  isError=True ===
-Error executing tool clasificar_lote
+=== TOOL clasificar_lote (lote incompleto)  isError=False ===
+{
+  "error": "Variables del lote invalidas. Faltan: ['malic_acid', 'ash', 'alcalinity_of_ash', 'magnesium', 'total_phenols', 'flavanoids', 'nonflavanoid_phenols', 'proanthocyanins', 'color_intensity', 'hue', 'od280/od315_of_diluted_wines', 'proline']. Sobran: []."
+}
