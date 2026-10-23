@@ -87,7 +87,8 @@ exactitud de 0.98 aquí no demuestra que la herramienta funcione con los vinos d
 
 ## Instalación
 
-Requisitos: Python 3.10 o superior (probado con 3.14) y Git.
+Requisitos: Python 3.10 o superior (probado con 3.14) y Git. Este proyecto es la carpeta `Modulo 8_1/` de un repositorio que
+guarda varios módulos del curso; todo lo que necesita está dentro de esa carpeta.
 
 ```bash
 git clone https://github.com/mikecrv2019-bit/MAI540---MODULO-5.git

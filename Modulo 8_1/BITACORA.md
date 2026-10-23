@@ -19,6 +19,7 @@ pruebas con `pytest -v` guardado; Skill de auditoría aplicada; README con la pl
 | Hiperparámetros fijos, sin búsqueda | Evita necesitar validación anidada con tan pocos datos; todos los modelos tienen la misma oportunidad. | — |
 | Dos ramas: `feat/modelo-validado` y `feat/herramienta-readme` | Una por funcionalidad (modelado / uso y documentación). | — |
 | Revisor del PR = Skill de auditoría + revisión de Claude | La Skill está permitida como revisor por el enunciado; Claude no es una persona. | **[pendiente]** Revisión humana (docente o compañero), a anotar en `revision/`. |
+| Carpeta `Modulo 8_1/` en el repositorio `MAI540---MODULO-5` (como `Modulo 5_1`, `Modulo 6_2`, `Modulo 7_2`) | Es la convención de nombres que pidió el estudiante para entregar. La carpeta se llamó antes `Capstone_Dilitio_Wine`; se renombró también en la historia local (antes de subir nada) para que los commits muestren la ruta final. | — |
 | Hook `pre-commit` en `hooks/` (pytest + búsqueda de claves) | Es el patrón del Módulo 7; solo actúa si el commit toca `Modulo 8_1/`. | — |
 
 ## 3. Lo que se verificó (y cómo)
