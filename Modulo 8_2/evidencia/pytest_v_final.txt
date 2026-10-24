@@ -1,0 +1,49 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\<usuario>\AppData\Local\Python\pythoncore-3.14-64\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\<usuario>\Documents\ATLANTIS UNIVERSITY 2026 - 2027\MAI540 - SEP 01 2026 - OCT 08 2026\MODULO 5\Demo_PCA_MCP_incompleto\Modulo 8_2
+plugins: anyio-4.15.1
+collecting ... collected 40 items
+
+tests/test_datos.py::test_forma_de_los_datos_y_objetivo_fuera_de_X PASSED [  2%]
+tests/test_datos.py::test_validar_rechaza_nan_y_columna_faltante PASSED  [  5%]
+tests/test_deriva.py::test_sin_cambio_no_hay_alerta PASSED               [  7%]
+tests/test_deriva.py::test_un_sesgo_de_prolina_se_detecta_y_se_nombra PASSED [ 10%]
+tests/test_deriva.py::test_con_pocos_lotes_solo_se_mira_el_rango PASSED  [ 12%]
+tests/test_deriva.py::test_cuenta_los_lotes_fuera_de_rango PASSED        [ 15%]
+tests/test_deriva.py::test_aplicar_escenario_no_toca_los_datos_originales_y_el_ruido_es_reproducible PASSED [ 17%]
+tests/test_deriva.py::test_mas_ruido_baja_la_exactitud_y_sin_cambio_se_mantiene_alta PASSED [ 20%]
+tests/test_detalle_errores.py::test_intervalo_wilson_con_valores_conocidos PASSED [ 22%]
+tests/test_detalle_errores.py::test_cada_lote_se_predice_una_vez_y_las_clases_suman_178 PASSED [ 25%]
+tests/test_detalle_errores.py::test_confianza_es_una_probabilidad_valida PASSED [ 27%]
+tests/test_detalle_errores.py::test_los_grupos_por_tercil_y_por_confianza_cubren_todos_los_lotes PASSED [ 30%]
+tests/test_detalle_errores.py::test_cada_error_tiene_su_explicacion_y_se_parece_mas_a_la_clase_predicha PASSED [ 32%]
+tests/test_errores_segmentacion.py::test_analisis_por_categoria_con_un_caso_conocido PASSED [ 35%]
+tests/test_errores_segmentacion.py::test_kmeans_cumple_silueta_del_piloto_y_es_estable PASSED [ 37%]
+tests/test_interfaz.py::test_un_lote_tipico_se_clasifica_con_confianza_alta PASSED [ 40%]
+tests/test_interfaz.py::test_un_lote_ambiguo_avisa_de_confianza_baja PASSED [ 42%]
+tests/test_interfaz.py::test_una_entrada_vacia_no_rompe_la_pantalla PASSED [ 45%]
+tests/test_interfaz.py::test_un_valor_fuera_de_rango_se_advierte PASSED  [ 47%]
+tests/test_interfaz.py::test_el_archivo_se_valida_con_mensajes_claros PASSED [ 50%]
+tests/test_interfaz.py::test_el_archivo_completo_da_exactitud_alta_y_sin_alerta PASSED [ 52%]
+tests/test_interfaz.py::test_un_archivo_con_la_prolina_desplazada_dispara_la_alerta PASSED [ 55%]
+tests/test_interfaz.py::test_la_pantalla_se_construye_con_todos_los_campos PASSED [ 57%]
+tests/test_modelo.py::test_el_modelo_elegido_supera_a_la_linea_base PASSED [ 60%]
+tests/test_modelo.py::test_desviacion_de_la_validacion_cruzada_del_elegido PASSED [ 62%]
+tests/test_modelo.py::test_la_prueba_final_confirma_la_validacion_cruzada PASSED [ 65%]
+tests/test_modelo.py::test_la_eleccion_no_depende_de_la_prueba_final PASSED [ 67%]
+tests/test_predecir.py::test_clasifica_un_lote_valido PASSED             [ 70%]
+tests/test_predecir.py::test_rechaza_lotes_incompletos_o_con_valores_invalidos PASSED [ 72%]
+tests/test_predecir.py::test_advierte_si_un_valor_sale_del_rango_de_entrenamiento PASSED [ 75%]
+tests/test_predecir.py::test_el_servidor_mcp_registra_las_dos_tools PASSED [ 77%]
+tests/test_predecir.py::test_la_tool_mcp_devuelve_el_motivo_cuando_el_lote_es_invalido PASSED [ 80%]
+tests/test_seleccion.py::test_elige_el_mas_simple_entre_equivalentes PASSED [ 82%]
+tests/test_seleccion.py::test_no_elige_un_modelo_fuera_de_la_desviacion_del_mejor PASSED [ 85%]
+tests/test_seleccion.py::test_descarta_modelos_que_no_superan_la_linea_base PASSED [ 87%]
+tests/test_seleccion.py::test_modelo_desconocido_da_error_claro PASSED   [ 90%]
+tests/test_validacion.py::test_particion_estratificada_y_sin_traslape PASSED [ 92%]
+tests/test_validacion.py::test_escalado_se_ajusta_solo_con_entrenamiento PASSED [ 95%]
+tests/test_validacion.py::test_validacion_cruzada_es_determinista_y_tiene_15_estimaciones PASSED [ 97%]
+tests/test_validacion.py::test_cv_que_no_cubre_todas_las_filas_falla_con_mensaje_claro PASSED [100%]
+
+============================= 40 passed in 20.78s =============================
