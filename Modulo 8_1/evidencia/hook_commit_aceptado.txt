@@ -1,0 +1,10 @@
+$ git commit -m "docs(evidencia): salida completa de pytest -v (16 pruebas) y commit cancelado por el hook"
+[hook 1/2] Ejecutando pytest antes del commit...
+................                                                         [100%]
+16 passed in 8.96s
+[hook 2/2] Buscando claves o secretos en los archivos del commit...
+[hook] Comprobaciones superadas.
+[feat/modelo-validado a69f149] docs(evidencia): salida completa de pytest -v (16 pruebas) y commit cancelado por el hook
+ 2 files changed, 42 insertions(+)
+ create mode 100644 Modulo 8_1/evidencia/hook_commit_cancelado.txt
+ create mode 100644 Modulo 8_1/evidencia/pytest_v_PR1.txt
