@@ -1,0 +1,274 @@
+{
+  "modelo": "regresion_logistica",
+  "lotes": 178,
+  "errores_repeticion_1": 3,
+  "lotes_con_algun_error": 3,
+  "por_clase": [
+    {
+      "grupo": "class_0",
+      "n": 59,
+      "errores": 0,
+      "tasa_error": 0.0,
+      "ic95": [
+        0.0,
+        0.061131479784092065
+      ],
+      "recall": 1.0,
+      "recall_ic95": [
+        0.938868520215908,
+        1.0
+      ],
+      "errores_estables": 0
+    },
+    {
+      "grupo": "class_1",
+      "n": 71,
+      "errores": 2,
+      "tasa_error": 0.028169014084507043,
+      "ic95": [
+        0.007759100870383076,
+        0.09701685261003423
+      ],
+      "recall": 0.971830985915493,
+      "recall_ic95": [
+        0.9029831473899659,
+        0.992240899129617
+      ],
+      "errores_estables": 2
+    },
+    {
+      "grupo": "class_2",
+      "n": 48,
+      "errores": 1,
+      "tasa_error": 0.020833333333333332,
+      "ic95": [
+        0.003687015979399688,
+        0.10899469137531158
+      ],
+      "recall": 0.9791666666666666,
+      "recall_ic95": [
+        0.8910053086246883,
+        0.9963129840206002
+      ],
+      "errores_estables": 0
+    }
+  ],
+  "por_grupo": {
+    "alcohol": [
+      {
+        "grupo": "alcohol 11.03 a 12.52",
+        "n": 60,
+        "errores": 1,
+        "tasa_error": 0.016666666666666666,
+        "ic95": [
+          0.002948083860873682,
+          0.08855338226779477
+        ]
+      },
+      {
+        "grupo": "alcohol 12.52 a 13.48",
+        "n": 59,
+        "errores": 2,
+        "tasa_error": 0.03389830508474576,
+        "ic95": [
+          0.009345713033501513,
+          0.11543786981607584
+        ]
+      },
+      {
+        "grupo": "alcohol 13.48 a 14.83",
+        "n": 59,
+        "errores": 0,
+        "tasa_error": 0.0,
+        "ic95": [
+          0.0,
+          0.061131479784092065
+        ]
+      }
+    ],
+    "proline": [
+      {
+        "grupo": "proline 278 a 560",
+        "n": 61,
+        "errores": 1,
+        "tasa_error": 0.01639344262295082,
+        "ic95": [
+          0.002899656114363977,
+          0.08719065627768062
+        ]
+      },
+      {
+        "grupo": "proline 560 a 835",
+        "n": 58,
+        "errores": 2,
+        "tasa_error": 0.034482758620689655,
+        "ic95": [
+          0.009507728866485675,
+          0.11729364755327057
+        ]
+      },
+      {
+        "grupo": "proline 835 a 1680",
+        "n": 59,
+        "errores": 0,
+        "tasa_error": 0.0,
+        "ic95": [
+          0.0,
+          0.061131479784092065
+        ]
+      }
+    ],
+    "magnesium": [
+      {
+        "grupo": "magnesium 70 a 92",
+        "n": 63,
+        "errores": 2,
+        "tasa_error": 0.031746031746031744,
+        "ic95": [
+          0.00874934404029698,
+          0.10856681834959193
+        ]
+      },
+      {
+        "grupo": "magnesium 92 a 103",
+        "n": 58,
+        "errores": 0,
+        "tasa_error": 0.0,
+        "ic95": [
+          0.0,
+          0.062119996895293766
+        ]
+      },
+      {
+        "grupo": "magnesium 103 a 162",
+        "n": 57,
+        "errores": 1,
+        "tasa_error": 0.017543859649122806,
+        "ic95": [
+          0.003103584706680096,
+          0.09290966938262721
+        ]
+      }
+    ]
+  },
+  "por_confianza": [
+    {
+      "grupo": "confianza 0.00 a 0.80",
+      "n": 12,
+      "errores": 3,
+      "tasa_error": 0.25,
+      "ic95": [
+        0.08894003962896138,
+        0.53231033912066
+      ]
+    },
+    {
+      "grupo": "confianza 0.80 a 0.90",
+      "n": 8,
+      "errores": 0,
+      "tasa_error": 0.0,
+      "ic95": [
+        0.0,
+        0.3244156195108769
+      ]
+    },
+    {
+      "grupo": "confianza 0.90 a 0.99",
+      "n": 53,
+      "errores": 0,
+      "tasa_error": 0.0,
+      "ic95": [
+        0.0,
+        0.06758430445307662
+      ]
+    },
+    {
+      "grupo": "confianza 0.99 a 1.00",
+      "n": 105,
+      "errores": 0,
+      "tasa_error": 0.0,
+      "ic95": [
+        0.0,
+        0.035295328256842964
+      ]
+    }
+  ],
+  "lotes_mal_clasificados": [
+    {
+      "lote": 68,
+      "real": "class_1",
+      "predicho": "class_2",
+      "confianza": 0.411,
+      "prob_clase_real": 0.221,
+      "repeticiones_con_error": 2,
+      "variables_que_lo_acercan_a_la_clase_predicha": [
+        {
+          "variable": "alcohol",
+          "z_en_clase_real": 1.97,
+          "z_en_clase_predicha": 0.35
+        },
+        {
+          "variable": "od280/od315_of_diluted_wines",
+          "z_en_clase_real": 1.72,
+          "z_en_clase_predicha": 0.91
+        },
+        {
+          "variable": "nonflavanoid_phenols",
+          "z_en_clase_real": 1.5,
+          "z_en_clase_predicha": 0.83
+        }
+      ]
+    },
+    {
+      "lote": 83,
+      "real": "class_1",
+      "predicho": "class_2",
+      "confianza": 0.675,
+      "prob_clase_real": 0.316,
+      "repeticiones_con_error": 3,
+      "variables_que_lo_acercan_a_la_clase_predicha": [
+        {
+          "variable": "malic_acid",
+          "z_en_clase_real": 1.9,
+          "z_en_clase_predicha": 0.48
+        },
+        {
+          "variable": "alcohol",
+          "z_en_clase_real": 1.43,
+          "z_en_clase_predicha": 0.2
+        },
+        {
+          "variable": "total_phenols",
+          "z_en_clase_real": 1.12,
+          "z_en_clase_predicha": 0.08
+        }
+      ]
+    },
+    {
+      "lote": 134,
+      "real": "class_2",
+      "predicho": "class_1",
+      "confianza": 0.677,
+      "prob_clase_real": 0.316,
+      "repeticiones_con_error": 1,
+      "variables_que_lo_acercan_a_la_clase_predicha": [
+        {
+          "variable": "malic_acid",
+          "z_en_clase_real": 1.92,
+          "z_en_clase_predicha": 0.68
+        },
+        {
+          "variable": "ash",
+          "z_en_clase_real": 1.01,
+          "z_en_clase_predicha": 0.02
+        },
+        {
+          "variable": "alcalinity_of_ash",
+          "z_en_clase_real": 1.73,
+          "z_en_clase_predicha": 0.82
+        }
+      ]
+    }
+  ],
+  "confianza_maxima_de_un_error": 0.6771241381518538
+}

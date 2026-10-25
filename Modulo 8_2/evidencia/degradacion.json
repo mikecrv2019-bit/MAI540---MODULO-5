@@ -1,0 +1,63 @@
+{
+  "n_repartos": 100,
+  "lotes_entrenamiento": 133,
+  "lotes_evaluacion": 45,
+  "escenarios": {
+    "sin cambio": {
+      "exactitud_media": 0.9828888888888889,
+      "exactitud_desv": 0.017258117619501544,
+      "lotes_fuera_de_rango": 0.15488888888888888,
+      "alerta_distribucion": 0.01,
+      "alerta_rango": 0.0,
+      "alerta_cualquiera": 0.01
+    },
+    "prolina +10 %": {
+      "exactitud_media": 0.978,
+      "exactitud_desv": 0.019596885210763353,
+      "lotes_fuera_de_rango": 0.1571111111111111,
+      "alerta_distribucion": 0.01,
+      "alerta_rango": 0.02,
+      "alerta_cualquiera": 0.03
+    },
+    "prolina +25 %": {
+      "exactitud_media": 0.9695555555555555,
+      "exactitud_desv": 0.025200035233755448,
+      "lotes_fuera_de_rango": 0.19422222222222219,
+      "alerta_distribucion": 0.21,
+      "alerta_rango": 0.09,
+      "alerta_cualquiera": 0.27
+    },
+    "prolina +50 %": {
+      "exactitud_media": 0.9426666666666665,
+      "exactitud_desv": 0.03300322891540688,
+      "lotes_fuera_de_rango": 0.29688888888888887,
+      "alerta_distribucion": 1.0,
+      "alerta_rango": 0.49,
+      "alerta_cualquiera": 1.0
+    },
+    "prolina y magnesio +25 %": {
+      "exactitud_media": 0.9613333333333333,
+      "exactitud_desv": 0.032151902835867704,
+      "lotes_fuera_de_rango": 0.23066666666666663,
+      "alerta_distribucion": 1.0,
+      "alerta_rango": 0.18,
+      "alerta_cualquiera": 1.0
+    },
+    "ruido 0.5 desv.": {
+      "exactitud_media": 0.9504444444444444,
+      "exactitud_desv": 0.030435997091314608,
+      "lotes_fuera_de_rango": 0.47533333333333344,
+      "alerta_distribucion": 0.06,
+      "alerta_rango": 0.98,
+      "alerta_cualquiera": 0.98
+    },
+    "ruido 1.0 desv.": {
+      "exactitud_media": 0.8706666666666668,
+      "exactitud_desv": 0.05116232246297525,
+      "lotes_fuera_de_rango": 0.8062222222222222,
+      "alerta_distribucion": 0.18,
+      "alerta_rango": 1.0,
+      "alerta_cualquiera": 1.0
+    }
+  }
+}
