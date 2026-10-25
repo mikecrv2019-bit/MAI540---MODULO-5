@@ -101,7 +101,7 @@ guarda varios módulos; todo lo que necesita está dentro de esa carpeta.
 ```bash
 git clone https://github.com/mikecrv2019-bit/MAI540---MODULO-5.git
 cd MAI540---MODULO-5
-git switch feat/despliegue-8-2        # quitar este paso cuando la rama esté integrada en main
+
 cd "Modulo 8_2"
 python -m venv .venv
 source .venv/bin/activate        # en Windows: .venv\Scripts\Activate.ps1
